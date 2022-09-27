@@ -1,0 +1,101 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'MyriadPro';
+    src: url('../font/MyriadPro-Light.eot');
+    src: url('../font/MyriadPro-Light.eot?#iefix') format('embedded-opentype'),
+    url('../font/MyriadPro-Light.woff') format('woff'),
+    url('../font/MyriadPro-Light.ttf') format('truetype'),
+    url('../font/MyriadPro-Light.svg#MyriadPro-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MyriadPro';
+    src: url('../font/MYRIADPRO-REGULAR.eot');
+    src: url('../font/MYRIADPRO-REGULAR.eot?#iefix') format('embedded-opentype'),
+    url('../font/MYRIADPRO-REGULAR.woff') format('woff'),
+    url('../font/MYRIADPRO-REGULAR.ttf') format('truetype'),
+    url('../font/MYRIADPRO-REGULAR.svg#MYRIADPRO-REGULAR') format('svg');
+    font-weight: 400;
+   font-style: normal;
+}
+@font-face {
+    font-family: 'MyriadPro';
+    src: url('../font/MYRIADPRO-SEMIBOLD.eot');
+    src: url('../font/MYRIADPRO-SEMIBOLD.eot?#iefix') format('embedded-opentype'),
+    url('../font/MYRIADPRO-SEMIBOLD.woff') format('woff'),
+    url('../font/MYRIADPRO-SEMIBOLD.ttf') format('truetype'),
+    url('../font/MYRIADPRO-SEMIBOLD.svg#MYRIADPRO-SEMIBOLD') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MyriadPro';
+    src: url('../font/MYRIADPRO-BOLD.eot');
+    src: url('../font/MYRIADPRO-BOLD.eot?#iefix') format('embedded-opentype'),
+    url('../font/MYRIADPRO-BOLD.woff') format('woff'),
+    url('../font/MYRIADPRO-BOLD.ttf') format('truetype'),
+    url('../font/MYRIADPRO-BOLD.svg#MYRIADPRO-BOLD') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NotoKR';
+    src: url('../font/NotoSerifKR-Black.eot');
+    src: url('../font/NotoSerifKR-Black.eot?#iefix') format('embedded-opentype'),
+    url('../font/NotoSerifKR-Black.woff') format('woff'),
+    url('../font/NotoSerifKR-Black.ttf') format('truetype'),
+    url('../font/NotoSerifKR-Black.svg#NotoSerifKR-Black') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NotoKR';
+    src: url('../font/NotoSerifKR-Bold.eot');
+    src: url('../font/NotoSerifKR-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../font/NotoSerifKR-Bold.woff') format('woff'),
+    url('../font/NotoSerifKR-Bold.ttf') format('truetype'),
+    url('../font/NotoSerifKR-Bold.svg#NotoSerifKR-Bold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NotoKR';
+    src: url('../font/NotoSerifKR-semiBold.eot');
+    src: url('../font/NotoSerifKR-semiBold.eot?#iefix') format('embedded-opentype'),
+    url('../font/NotoSerifKR-semiBold.woff') format('woff'),
+    url('../font/NotoSerifKR-semiBold.ttf') format('truetype'),
+    url('../font/NotoSerifKR-semiBold.svg#NotoSerifKR-semiBold') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NotoKR';
+    src: url('../font/NotoSerifKR-Medium.eot');
+    src: url('../font/NotoSerifKR-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../font/NotoSerifKR-Medium.woff') format('woff'),
+    url('../font/NotoSerifKR-Medium.ttf') format('truetype'),
+    url('../font/NotoSerifKR-Medium.svg#NotoSerifKR-Medium') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NotoKR';
+    src: url('../font/NotoSerifKR-Regular.eot');
+    src: url('../font/NotoSerifKR-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../font/NotoSerifKR-Regular.woff') format('woff'),
+    url('../font/NotoSerifKR-Regular.ttf') format('truetype'),
+    url('../font/NotoSerifKR-Regular.svg#NotoSerifKR-Regular') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NotoKR';
+    src: url('../font/NotoSerifKR-Light.eot');
+    src: url('../font/NotoSerifKR-Light.eot?#iefix') format('embedded-opentype'),
+    url('../font/NotoSerifKR-Light.woff') format('woff'),
+    url('../font/NotoSerifKR-Light.ttf') format('truetype'),
+    url('../font/NotoSerifKR-Light.svg#NotoSerifKR-Light') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
