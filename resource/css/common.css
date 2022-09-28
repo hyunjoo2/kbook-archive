@@ -315,7 +315,7 @@ h6{font-size:18px}
 
 
 /* parts:button */
-.ui-button{ height:5.5rem; padding:0 3rem; font-size: 1.8rem; transition: all .1s;}
+.ui-button{ height:5.5rem; padding:0 3rem; font-size: 1.8rem; color:#000000; transition: all .1s;}
 .ui-buttons__inner{display:flex; }
 .ui-buttons--right .ui-buttons__inner{justify-content: flex-end;}
 .ui-button+.ui-button{margin-left: .5rem;}
@@ -432,7 +432,7 @@ table td{padding:10px;border:1px solid #dcdcdc;font-size:1.8rem;vertical-align:m
 
     .ui-checkbox-object, .ui-radio-object{width:18px; height:18px}
     .ui-radio-object::before{width:8px; height:8px;    margin: -4px 0 0 -4px;}
-    .ui-label__text, .ui-checkbox-object + .ui-label__text{font-size:15px;}
+    .ui-label__text, .ui-checkbox-object + .ui-label__text{font-size:15px; line-height: normal;}
     .ui-radio-wrap, .ui-checkbox-wrap, .ui-check-list__list{margin:-8px;}
     .ui-radio-block, .ui-checkbox-block{padding:8px;}
 }

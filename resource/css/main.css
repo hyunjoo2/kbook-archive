@@ -130,12 +130,15 @@
     .icon-booktable{width:34px; height:34px; background-size: cover;}
     .table-book table tr{height: auto;}
 
-    .form-search-book__bottom__inner .ui-buttons{ margin:0; padding:10px 16px 20px 16px;}
+    .form-search-book__bottom__inner .ui-buttons{ margin:0; padding:10px 16px 20px 16px; border-top:1px solid #cecece; flex:none;}
     .form-search-book__bottom__inner .ui-button{flex:1; height:40px; font-size:15px;}
     .table-book .ui-check-list__list li{width:calc(100% / 3)}
 
-    .search-book__mobile-header{display: flex; justify-content: space-between; padding:20px 16px 10px 16px;}
-    .table-book{height:100%; overflow-y: scroll;}
+    .search-book__mobile-header{display: flex; justify-content: space-between; padding:20px 16px 10px 16px; border-bottom:1px solid #cecece;}
+    .table-book{height:100%;  overflow-y: scroll;}
+    .table-book table th{border-color:#e4e4e4;}
+    .table-book>table tr:first-child>th{border-top:0;}
+    .table-book>table tr:last-child>td{border-bottom:0;}
     
 }
 
