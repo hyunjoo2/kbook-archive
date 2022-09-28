@@ -4,14 +4,20 @@
     <meta charset="UTF_8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta content="width=device-width,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" name="Viewport" />
-    <link rel="shortcut icon" href="../resource/image/common/icon/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../resource/css/common.css">
-    <link rel="stylesheet" href="../resource/css/main.css">
-    <script type="text/javascript" src="../resource/js/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="../resource/js/swiper.min.js"></script>
-    <script type="text/javascript" src="../resource/js/slick.js"></script>
-    <script type="text/javascript" src="../resource/js/common.js"></script>
-    <script type="text/javascript" src="../resource/js/main.js"></script>   
+    <link rel="shortcut icon" href="./resource/image/common/icon/favicon.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="./resource/css/reset.css">
+    <link rel="stylesheet" href="./resource/css/font.css">
+    <link rel="stylesheet" href="./resource/css/swiper.css">
+
+    <link rel="stylesheet" href="./resource/css/common.css">
+    <link rel="stylesheet" href="./resource/css/main.css">
+
+    <script type="text/javascript" src="./resource/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="./resource/js/swiper.min.js"></script>
+    <script type="text/javascript" src="./resource/js/slick.js"></script>
+    <script type="text/javascript" src="./resource/js/common.js"></script>
+    <script type="text/javascript" src="./resource/js/main.js"></script>   
     <title>K-BOOK</title>
 </head>
 <body>
@@ -27,24 +33,39 @@
         <header>  <!-- header -->
             <div class="header__inner">
                 <h1>
-                    <a href="/" title="홈 이동">
-                        <img src="../resource/image/common/img_logo_head.png" alt="K-BOOK">
+                    <a href="/" title="홈 이동" class="header-logo__link">
+                        <img src="./resource/image/common/img_logo_head.png" alt="K-BOOK">
                     </a>
                 </h1>
 
                 <div class="header--right">
-                    <div class="row">
-                        <ul class="subMenu row left">
-                            <li><a href="">Archive</a></li>
-                            <li><a href="">Statistics</a></li>
-                            <li><a href="">Request</a></li>
-                        </ul>
-                    </div>
-                    <div class="short-link">
-                        <button type="button" class="short-link__button">K - BOOK <br>
-                            <span>바로가기</span></button>
-                        <button type="button" class="short-link__button">WEBZINE <br>
-                            <span>바로가기</span></button>
+                    <div class="header--right__inner">
+                      <button class="subMenu-button"><span></span><span></span><span></span></button>
+                      <div class="subMenu-wrap">
+                        
+                        <div class="subMenu-header">
+                          <a href="/" title="홈 이동" class="header-logo__link">
+                              <img src="./resource/image/common/img_logo_head.png" alt="K-BOOK">
+                          </a>
+                          <button class="subMenu-button-close"><span></span><span></span></button>
+                        </div>
+                        
+                        <div class="subMenu-body">
+                          <div class="subMenu-list row">
+                              <ul class="subMenu row left">
+                                  <li><a href="">Archive</a></li>
+                                  <li><a href="">Statistics</a></li>
+                                  <li><a href="">Request</a></li>
+                              </ul>
+                          </div>
+                          <div class="short-link">
+                              <button type="button" class="short-link__button">K - BOOK <br>
+                                  <span>바로가기</span></button>
+                              <button type="button" class="short-link__button">WEBZINE <br>
+                                  <span>바로가기</span></button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                 </div>
 
@@ -85,6 +106,10 @@
                                     </div>
                                     <div class="form-search-book__bottom">
                                         <div class="form-search-book__bottom__inner">
+                                            <div class="search-book__mobile-header">
+                                              <p class="search-book__mobile-title">상세검색</p>
+                                              <button type="button" class="search-book__close-button"></button>
+                                            </div>
                                             <div class="table-wrap table-ver table-book">
                                                 <table>
                                                     <colgroup>

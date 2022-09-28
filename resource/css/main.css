@@ -22,7 +22,7 @@
 .form-search-book{position: relative; height:5.5rem; border:2px solid #6b3aae; box-sizing: border-box; flex:1;}
 .form-search-book__input{ width:calc(100% - 7rem ); height:100%; border:0; text-indent: 2rem;}
 .form-search-book__input::placeholder{font-size:1.8rem; color: #747478;}
-.form-search-book__button{position:absolute; top:0; right:0; width:7rem; height:100%; background: url(../image/common/icon/icon_finder_b.png) no-repeat center; border: 0;}
+.form-search-book__button{position:absolute; top:0; right:0; width:7rem; height:100%; background: url(../image/common/icon/icon_finder_b.png) no-repeat center; background-size: 2.5rem; border: 0;}
 
 .search-book-detail{margin-left: .5rem;}
 .search-book-detail__button{display:flex; align-items: center; justify-content: center; width:14.8rem; height:100%; padding:0; font-size:1.8rem; color:#ffffff; background-color: #b784ff; border:1px solid #aa6dff; text-shadow: .3rem .3rem .5rem rgba(35,15,64,0.18);}
@@ -70,7 +70,7 @@
 .book-list__link:hover .book-list__image img{transform: translate(-50%, -50%) scale(1.1);}
 .book-list__link:hover .book-list__caption{background:#b784ff; border: solid 2px #b381f9;}
 
-.book-title{ width:100%; text-overflow: ellipsis; white-space: nowrap; overflow:hidden; font-size:2.6rem; font-weight: 500;}
+.book-title{ width:100%; margin-top:1rem; text-overflow: ellipsis; white-space: nowrap; overflow:hidden; font-size:2.6rem; font-weight: 500;}
 .book-title__for{ margin-top:1rem; text-overflow: ellipsis; white-space: nowrap; overflow:hidden; font-size: 2rem; font-weight: 300; color: #747478; }
 
 .book-list__info__detail{ position:relative; margin-top:2.5rem;  padding:3rem 2rem 3rem 0;}
@@ -80,6 +80,15 @@
 .book-list__info__detail dl+dl{margin-top: 1.2rem;}
 .book-list__info__detail dl dt{width: 15rem; color:#928f95; font-weight: 500; flex:none;}
 .book-list__info__detail dl dd{padding-left:4rem; font-weight: 500; line-height: normal;}
+
+.search-book__mobile-header{display: none;}
+.search-book__mobile-title{ font-size: 18px; font-weight: 600;}
+.search-book__close-button{width: 15px; height:15px; background: url(../image/common/icon/icon-close__black.png) no-repeat center; background-size: cover;}
+
+/* is-mobile */
+.is-mobile .form-search-book__bottom{position: fixed; top:0; left:0; width:100%; height:100%; margin:0;  padding:43px 10px; background:rgba(0,0,0,0.5); z-index: 2; box-sizing: border-box;}
+.is-mobile .form-search-book__bottom__inner{ display:flex; flex-direction: column; height:100%; background:#ffffff; border-radius: 10px; overflow:hidden;}
+
 
 
 /*============================= responsive =============================*/
@@ -100,15 +109,37 @@
 @media screen and (max-width:720px){
     .book-list__list{flex-direction: column;}
     .book-list__item{width:100%;}
-    .book-list__info{width:calc(100% - 42rem)}
+    .book-list__info{width:calc(100% - 42rem); margin-left:16px}
     .search-total{align-items: flex-start;}
     .search-total__left{flex-direction: column;}
     .book-list__type{margin-top:26px; margin-left:0;}
-    .book-list__image{width:47.6%; height: 69.6%;}
-}
-
-@media screen and (min-width:360px){
+    .book-list__image{width:47.6%; padding-bottom: 69.6%;}
     .search-book, .book-list{padding:0 16px;}
     .ui-button--height-50{height: 27px;}
     .ui-button{padding:0 11px;}
+    .search-book--tab__content{padding:16px;}
+    .form-search-book__button{width:42px;}
+
+    .search-book-detail__button{width:70px;}
+    .search-book-detail__button::after{display:none;}
+    
+    .icon-wrap{font-size:16px;}
+    .book-title{margin-top:20px;}
+    .table-book table, .table-book table tbody, .table-book table tr, .table-book table th, .table-book table td{display: block; width:100%; box-sizing: border-box;}
+    .table-book table th{background-color: #f0f1f4;}
+    .icon-booktable{width:34px; height:34px; background-size: cover;}
+    .table-book table tr{height: auto;}
+
+    .form-search-book__bottom__inner .ui-buttons{ margin:0; padding:10px 16px 20px 16px;}
+    .form-search-book__bottom__inner .ui-button{flex:1; height:40px; font-size:15px;}
+    .table-book .ui-check-list__list li{width:calc(100% / 3)}
+
+    .search-book__mobile-header{display: flex; justify-content: space-between; padding:20px 16px 10px 16px;}
+    .table-book{height:100%; overflow-y: scroll;}
+    
+}
+
+@media screen and (min-width:360px){
+    
+    
 }
