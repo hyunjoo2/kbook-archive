@@ -46,10 +46,10 @@ function windowMobile(){
         }
     } );
 
+    if($(".wrap").hasClass("is-mobile")){
+        $(".search-book-detail__button").text("상세검색");
+    }
 
-    
-
-    
 
     
     $(".search-book__close-button").click(function(){
