@@ -28,6 +28,7 @@ function windowMobile(){
         $(".search-book-detail__button").on('click',function(){
             $("header").addClass("is-hide");
             $(".form-search-book__bottom").finish();
+            $("wrap").addClass("is-hidden");
         });
     }else{
         $(".wrap").removeClass("is-mobile")
@@ -38,16 +39,22 @@ function windowMobile(){
             $(".wrap").addClass("is-mobile");
             $(".search-book-detail__button").click(function(){
                 $("header").addClass("is-hide");
+                $("wrap").addClass("is-hidden");
             });
         } else {
             $(".wrap").removeClass("is-mobile")
         }
     } );
 
+
+    
+
     
 
     
     $(".search-book__close-button").click(function(){
         $(".form-search-book__bottom").fadeOut();
+        $("header").removeClass("is-hide");
+        $("wrap").removeClass("is-hidden");
     })
 }

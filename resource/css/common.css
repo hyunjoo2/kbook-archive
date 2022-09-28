@@ -5,6 +5,7 @@ body{position: absolute; width: 100%; height:100%}
 html{font-size: 62.5%;}
 
 .hidden{position:absolute;top:-9999px !important;left:-9999px  !important;}
+.is-hidden{overflow: hidden;}
 body.bind{overflow:hidden;}
 .wrap{ position: relative; height:100%; overflow-x: hidden;}
 .inner{max-width:1400px;margin:0 auto;}
