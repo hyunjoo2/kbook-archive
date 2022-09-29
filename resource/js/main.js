@@ -7,6 +7,7 @@ $(function(){
 function searchBookDetail(){
     $(".search-book-detail__button").click(function(){
         $(this).toggleClass("is-open");
+        $(this).text("상세닫기");
         $(".form-search-book__bottom").slideToggle();
     })
 }

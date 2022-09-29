@@ -318,12 +318,22 @@ h6{font-size:18px}
 
 
 /* parts:button */
-.ui-button{ height:5.5rem; padding:0 3rem; font-size: 1.8rem; color:#000000; transition: all .1s;}
+.ui-buttons-wrap{display: flex;}
+.ui-buttons-wrap .ui-buttons--right{margin-left: auto;}
+.ui-buttons{display: flex; margin: 0 -.5rem;}
+.ui-button-only{margin-right:-.5rem}
+.ui-button{ height:5.5rem; padding:0 3rem; margin:0 .5rem; font-size: 1.8rem; font-weight: 400; color:#000000; transition: all .1s;}
+.ui-button span{font-size: 1.6rem; font-weight: 100;}
 .ui-buttons__inner{display:flex; }
+.ui-buttons--right{justify-content: flex-end;}
 .ui-buttons--right .ui-buttons__inner{justify-content: flex-end;}
-.ui-button+.ui-button{margin-left: .5rem;}
+/* .ui-button+.ui-button{margin-left: .5rem;} */
+
+.ui-button-gray{background:#f2f3f6;}
+.ui-button--color-purple{color:#523a74}
 
 .ui-button--color-purple1{background-color:#b784ff; border: solid 1px #b784ff; text-shadow: .3rem .3rem .5rem rgba(35,15,64,0.18); color: #ffffff;}
+.ui-button--color-purple1 span{text-shadow: .3rem .3rem .5rem rgba(35,15,64,0.18);}
 .ui-button--color-purple1:hover{border-color: #400b88;   background-color: #5e309c;}
 
 .ui-button--color-purple2{background-color:#a769ff; border: solid 1px #a769ff;}
@@ -335,11 +345,16 @@ h6{font-size:18px}
 .ui-button--border-gray{border: solid 1px #cfcad5; background-color: #ffffff; color:#000000; font-weight: 500;}
 .ui-button--border-gray:hover{border-color: #6c489d;}
 
-.ui-button--icon{display: flex; align-items: center; justify-content: center;}
+.ui-button--icon{/* display: flex; align-items: center; justify-content: center; */ display: inline-block;}
 .ui-button--icon::before, .ui-button--icon::after{display:inline-block; content:""; background-size: cover; background-repeat: no-repeat; background-position: center;}
 .ui-button--icon-down::after{width: 2.1rem; height:1.8rem; margin-left: 1rem; background-image: url(../image/main/icon-download.png)}
 .ui-button--icon-down:hover::after{background-image: url(../image/main/icon-download__hover.png)}
+
+.ui-button--icon-right::after{width: .9rem; height:1.3rem; margin-left: 1rem; background-image: url(../image/common/icon/arrow-right__white--thin.png)}
+
 .ui-button--height-50{height: 5rem;}
+.ui-button--width-110{width:11rem; padding:0; font-weight: 500;}
+.ui-button--width-160{width:16rem;}
 
 
 /* parts:forms */
