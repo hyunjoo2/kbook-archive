@@ -79,8 +79,11 @@
 	.view-top__bottom .ui-buttons-wrap .ui-buttons--right{justify-content: flex-start; margin:0 -.5rem; margin-top: 5px;}
 	.table-book__view th, .table-book__view td, .table-book__view td a{font-size: 15px; line-height: normal;}
 
-	.table-book__view th{padding: 8px 13px;}
+	.table-book__view th, .table-book__view td{padding: 8px 13px;}
 	.table-book__view--table>tbody>tr>td{padding:10px 0}
+	.table-book__view--in>colgroup>col:nth-child(1){width:18rem !important;}
+	.table-book__view--table>tbody>tr>td::before{width:18rem;}
+	/* .table-book__view--table>tbody>tr>td::before{width:calc(100% - 26rem); max-width:23rem} */
 } 
 
 
