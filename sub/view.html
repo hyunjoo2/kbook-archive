@@ -18,6 +18,7 @@
     <script type="text/javascript" src="../resource/js/swiper.min.js"></script>
     <script type="text/javascript" src="../resource/js/slick.js"></script>
     <script type="text/javascript" src="../resource/js/common.js"></script>
+    
     <script type="text/javascript" src="../resource/js/main.js"></script>   
     <title>K-BOOK</title>
 </head>
@@ -34,7 +35,7 @@
         <header>  <!-- header -->
             <div class="header__inner">
                 <h1>
-                    <a href="/index.html" title="홈 이동" class="header-logo__link">
+                    <a href="../index.html" title="홈 이동" class="header-logo__link">
                         <img src="../resource/image/common/img_logo_head.png" alt="K-BOOK">
                     </a>
                 </h1>
@@ -45,7 +46,7 @@
                       <div class="subMenu-wrap">
                         
                         <div class="subMenu-header">
-                          <a href="/index.html" title="홈 이동" class="header-logo__link">
+                          <a href="../index.html" title="홈 이동" class="header-logo__link">
                               <img src="../resource/image/common/img_logo_head.png" alt="K-BOOK">
                           </a>
                           <button class="subMenu-button-close"><span></span><span></span></button>
@@ -87,7 +88,7 @@
                                 <div class="view-book-thumbnail">
 
                                     <!-- 퍼블 전달사항 :: 클릭시 하단 모달 표출 됩니다. -->
-                                    <a href="javascript:void(0)" class="view-book-thumbnail__popup modal" data-layer-open="thumb-image">
+                                    <a href="javascript:openModal('modal1');" class="view-book-thumbnail__popup modal" data-layer-open="thumb-image">
                                         <img src="../resource/image/sub/book-thumb.png" alt="">
                                     </a>
 
@@ -299,7 +300,7 @@
                             </div>
 
                             <div class="view-bottom__button">
-                                <button type="button" class="ui-button ui-button--width-160 ui-button--height-50 ui-button--border-gray">목록</button>
+                                <button type="button" class="ui-button ui-button--width-160 ui-button--height-50 ui-button--border-gray" onclick="location.href='../index.html'">목록</button>
                             </div>
                             
                         </div>
@@ -342,7 +343,7 @@
                 <div class="footer-bottom">
                     <div class="footer-bottom__inner">
                         <div class="footer-logo">
-                            <a href="./index.html" class="footer-logo__link">
+                            <a href="../index.html" class="footer-logo__link">
                                 <img src="../resource/image/common/footer-logo.png" alt="">
                             </a>
                         </div>
@@ -370,9 +371,10 @@
         </footer>
 
         <!-- 모달 -->
-        <div class="layer-wrap" data-layer="thumb-image">
+        <div class="layer-background"></div>
+        <div class="layer-wrap modal1">
             <div class="layer-container">
-                <button type="button" class="ui-layer-header__close" data-role="layerClose"></button>
+                <button type="button" class="ui-layer-header__close"></button>
                 <section class="ui-layer">
                     <div class="ui-layer__body">
                     <div class="ui-layer__body-inner">

@@ -65,6 +65,8 @@
 	.book-lang span{font-size:20px;}
 	.view-book__title{font-size:18px; line-height: 26px; margin-right: 0; overflow: visible;
 		white-space: normal;}
+	.ui-button--look-book{ width:auto; height: 40px; padding:0 10px; font-size: 15px;}
+	.ui-button--look-book span{font-size: 13px;}
 }
 
 @media screen and (max-width:720px){
@@ -72,9 +74,10 @@
 
 	.table-book__view--table, .table-book__view--table>tbody{display: block; width:100%;}
     .table-book__view--table>tbody>tr, .table-book__view--table>tbody>tr>td{display: flex; flex-direction: column;}
-	.table-book__view--table>tbody>tr>td+td{border-top:1px solid #e2e0e7}
+	.table-book__view--table>tbody>tr>td+td{ margin-top:-10px; padding-top:0;}
 	.book-tags__item{ min-width: 88px; height:40px; font-size:15px;}
-	.view-top__bottom .ui-button--color-purple1{height: 40px;}
+	.book-tags__item+.book-tags__item{margin-left:6px;}
+	
 	.view-top__bottom .ui-buttons-wrap{flex-direction: column;}
 	.view-top__bottom .ui-buttons-wrap .ui-buttons--right{justify-content: flex-start; margin:0 -.5rem; margin-top: 5px;}
 	.table-book__view th, .table-book__view td, .table-book__view td a{font-size: 15px; line-height: normal;}
@@ -84,6 +87,10 @@
 	.table-book__view--in>colgroup>col:nth-child(1){width:18rem !important;}
 	.table-book__view--table>tbody>tr>td::before{width:18rem;}
 	/* .table-book__view--table>tbody>tr>td::before{width:calc(100% - 26rem); max-width:23rem} */
+
+	.view-book-thumbnail__popup:hover::after, .view-book-thumbnail__popup:hover::before{display: none;}
+	.view-bottom__button .ui-button--height-50{height:40px; font-size: 13px;}
+	
 } 
 
 
