@@ -21,7 +21,7 @@ function openModal(modalname){
 }
 
 function modal(){
-    $(".layer-background, .ui-layer-header__close").on('click',function(){
+    $(".layer-wrap, .ui-layer-header__close").on('click',function(){
         $(".layer-background").fadeOut(300);
         $(".layer-wrap").fadeOut(300);
       });
