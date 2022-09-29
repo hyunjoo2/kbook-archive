@@ -85,7 +85,15 @@
                         <div class="view-top">
                             <div class="view-top__inner">
                                 <div class="view-book-thumbnail">
-                                    <img src="../resource/image/sub/book-thumb.png" alt="">
+
+                                    <!-- 퍼블 전달사항 :: 클릭시 하단 모달 표출 됩니다. -->
+                                    <a href="javascript:void(0)" class="view-book-thumbnail__popup modal" data-layer-open="thumb-image">
+                                        <img src="../resource/image/sub/book-thumb.png" alt="">
+                                    </a>
+
+                                    
+                                      
+
                                 </div>
                                 <div class="view-top__right">
                                     <div class="view-book-info">
@@ -100,10 +108,12 @@
                                     </div>
                                     <div class="view-top__bottom">
                                         <div class="ui-buttons-wrap">
-                                            <div class="ui-buttons ">
-                                                <button type="button" class="ui-button ui-button--width-110 ui-button--height-50 ui-button-gray ui-button--color-purple">학습만화</button>
-                                                <button type="button" class="ui-button ui-button--width-110 ui-button--height-50 ui-button-gray ui-button--color-purple">케이팝</button>
-                                                <button type="button" class="ui-button ui-button--width-110 ui-button--height-50 ui-button-gray ui-button--color-purple">단행본</button>
+                                            <div class="book-tags">
+                                                <ul class="book-tags__list">
+                                                    <li class="book-tags__item">학습만화</li>
+                                                    <li class="book-tags__item">케이팝</li>
+                                                    <li class="book-tags__item">단행본</li>
+                                                </ul>
                                             </div>
                                             <div class="ui-buttons ui-buttons--right">
                                                 <button type="button" class="ui-button ui-button--look-book ui-button--height-50 ui-button--color-purple1 ui-button--icon ui-button--icon-right">K - BOOK<span>에서 보기</span></button>
@@ -358,5 +368,24 @@
                 </div>
             </div>
         </footer>
+
+        <!-- 모달 -->
+        <div class="layer-wrap" data-layer="thumb-image">
+            <div class="layer-container">
+                <button type="button" class="ui-layer-header__close" data-role="layerClose"></button>
+                <section class="ui-layer">
+                    <div class="ui-layer__body">
+                    <div class="ui-layer__body-inner">
+                        <div class="thumbnail-image">
+                            <img src="../resource/image/sub/book-thumb__pop.png" alt="">
+                        </div>
+                    </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- //모달 -->
+    </div>
+
 </body>
 </html>

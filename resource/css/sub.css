@@ -35,5 +35,38 @@
 .table-book__view--in{table-layout: fixed;}
 
 .sub-item{margin-top:6rem;}
+.view-bottom__button{text-align: center; margin-top:3rem;}
+
+.view-book-thumbnail__popup{display: block; position:relative; width:100%; height:100%;}
+.view-book-thumbnail__popup:hover::before{position:absolute; width:100%; height:100%; background: rgba(0, 0, 0, .5); content:""}
+.view-book-thumbnail__popup:hover::after{position:absolute; top:calc(50% - 4.6rem); left:50%; width:4.6rem; height:4.6rem; background: url(../image/common/icon/icon_finder.png) no-repeat center; background-size: cover; transform: translate(-50%, 50%); content:""}
+.view-book-thumbnail__popup img{max-width:100%; max-height:100%;}
+
+.book-tags__list{display:flex;}
+.book-tags__item{ display:flex; align-items:center; justify-content: center;  width:11rem; height:5rem; background:#f2f3f6; font-weight:500; color:#523a74}
+.book-tags__item+.book-tags__item{margin-left: 1rem;}
+
+.thumbnail-image img{width:100%;}
+
+
+/*============================= responsive =============================*/
+
+@media screen and (max-width:768px){
+    .view-top__inner{flex-direction: column;}
+	.sub-content__inner{background: transparent;}
+	.view-book-thumbnail{margin:0 auto;}
+	.view-top__right{width:100%;}
+	.view-book__title-for{line-height: 3.2rem;}
+	.view-top__bottom{margin-top: 3rem}
+	.view-bottom{padding:0 16px;}
+}
+
+@media screen and (max-width:720px){
+	.table-book__view--table, .table-book__view--table>tbody{display: block; width:100%;}
+    .table-book__view--table>tbody>tr, .table-book__view--table>tbody>tr>td{display: flex; flex-direction: column;}
+	.table-book__view--table>tbody>tr>td+td{border-top:1px solid #e2e0e7}
+}
+
+
 
 
