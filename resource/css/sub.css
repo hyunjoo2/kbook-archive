@@ -47,7 +47,7 @@
 .book-tags__item+.book-tags__item{margin-left: 1rem;}
 
 .thumbnail-image img{width:100%;}
-
+.shop-link{word-break: break-all;}
 
 /*============================= responsive =============================*/
 
@@ -68,6 +68,8 @@
 }
 
 @media screen and (max-width:720px){
+	.sub-visual{height:260px;}
+
 	.table-book__view--table, .table-book__view--table>tbody{display: block; width:100%;}
     .table-book__view--table>tbody>tr, .table-book__view--table>tbody>tr>td{display: flex; flex-direction: column;}
 	.table-book__view--table>tbody>tr>td+td{border-top:1px solid #e2e0e7}
@@ -76,6 +78,9 @@
 	.view-top__bottom .ui-buttons-wrap{flex-direction: column;}
 	.view-top__bottom .ui-buttons-wrap .ui-buttons--right{justify-content: flex-start; margin:0 -.5rem; margin-top: 5px;}
 	.table-book__view th, .table-book__view td, .table-book__view td a{font-size: 15px; line-height: normal;}
+
+	.table-book__view th{padding: 8px 13px;}
+	.table-book__view--table>tbody>tr>td{padding:10px 0}
 } 
 
 
