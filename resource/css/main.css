@@ -4,7 +4,7 @@
 
 
 .main-visual{ display: flex; align-items: center; justify-content: center; height: 44rem; background-image: url(../image/main/main-visual.jpg); background-repeat: repeat; background-position: center; background-size: cover;}
-.visual-text{margin-top:-6rem; font-size: 6rem; font-weight:600; color:#ffffff;}
+.main-visual .visual-text{margin-top:-6rem; font-size: 6rem; font-weight:600; color:#ffffff;}
 
 
 /* main-content */

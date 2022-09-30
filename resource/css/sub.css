@@ -3,7 +3,8 @@
 /* 서브 공통 */
 .sub-content__inner{max-width: 140rem; margin: 0 auto; background: #ffffff;}
 .sub-visual{ display: flex; align-items: center; justify-content: center; height: 44rem; background-image: url(../image/sub/visual_sub.jpg); background-repeat: repeat; background-position: center; background-size: cover;}
-.visual-text{margin-top:-6rem; font-size: 6rem; font-weight:600; color:#ffffff;}
+.visual-text{ font-size: 6rem; font-weight:600; color:#ffffff;}
+.sub-visual .visual-text{margin-top: 0;}
 
 
 /* view */
@@ -48,6 +49,32 @@
 
 .thumbnail-image img{width:100%;}
 .shop-link{word-break: break-all;}
+
+/* request */
+.request-wrap__inner{padding-top:4rem}
+.request-top__text{margin-bottom:1rem;}
+.require-text{padding-left: 1rem; font-size:1.6rem;}
+.ui-require{position: relative;	width: 0; height:0; }
+.ui-require::before{ position:absolute; left: 0px; width:10px; height:4px; content:"*"; color:#e70000;}
+
+.table-normal tr+tr{border-top:1px solid #c2bfc8;}
+.table-normal th, .table-normal td{ height:7rem; padding:10px 20px; font-size:1.8rem; box-sizing: border-box; letter-spacing: -1px; border:0;}
+.table-normal th{text-align: left; font-weight: 500; border-right-color:#c2bfc8;}
+.table-normal>table{border-top:1px solid #594872; border-bottom:1px solid #594872}
+.table-normal.table-ver tr:first-child th, .table-normal.table-ver tr:first-child td{border-top:0;}
+.flex-row{display: flex;}
+.flex-cell{flex:1;}
+.flex-cell+.flex-cell{margin-left: 2rem;}
+.table-item+.table-item{margin-top:2rem}
+.table-normal th span{font-size:1.6rem; color:#747478;}
+
+.filebox input[type="file"] { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
+
+.filebox label { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 12.3rem; height: 4.8rem; margin-right: .6rem; font-size: 1.7rem;  cursor: pointer; box-sizing: border-box; flex:none; }
+
+.filebox .upload-name { display: inline-block; font-size: inherit; font-family: inherit; line-height: normal; vertical-align: middle; background: #ffffff; border: 1px solid #dddddd; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+.filebox .upload-name.is-inputed{border-color:#594872;}
+.request-bottom__button{margin-toP:4rem; text-align:center;}
 
 /*============================= responsive =============================*/
 
