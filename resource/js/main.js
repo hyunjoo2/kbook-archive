@@ -35,31 +35,62 @@ function windowMobile(){
     var windowWidth = $win.width();
     var windowHeight = $win.height();
 
+    
+
     if(windowWidth <= 720){
+        
         $(".wrap").addClass("is-mobile");
+        $(".form-search-book__bottom").hide();
+        $(".search-book-detail__button").removeClass("is-open");
+
         $(".search-book-detail__button").on('click',function(){
             $("header").addClass("is-hide");
             $(".form-search-book__bottom").finish();
             $("wrap").addClass("is-hidden");
+            $(".search-book-detail__button").text("상세검색").removeClass("is-open");
         });
+        
+
     }else{
-        $(".wrap").removeClass("is-mobile")
+        $(".wrap").removeClass("is-mobile");
+        $(".form-search-book__bottom").show();
+        if($(".search-book-detail__button").hasClass("is-open")){
+            $(".search-book-detail__button").text("상세닫기");
+        }else{
+            $(".search-book-detail__button").text("상세보기");
+            
+        }
     }
 
     $( window ).resize( function() {
         if($(this).width() <= 720) {
+            
             $(".wrap").addClass("is-mobile");
+            $(".form-search-book__bottom").hide();
+            $(".search-book-detail__button").removeClass("is-open");
+
             $(".search-book-detail__button").click(function(){
                 $("header").addClass("is-hide");
                 $("wrap").addClass("is-hidden");
+                $(".search-book-detail__button").text("상세검색").removeClass("is-open");
             });
         } else {
-            $(".wrap").removeClass("is-mobile")
+            $(".wrap").removeClass("is-mobile");
+            $(".form-search-book__bottom").show();
+            if($(".search-book-detail__button").hasClass("is-open")){
+                $(".search-book-detail__button").text("상세닫기");
+            }else{
+                $(".search-book-detail__button").text("상세보기");
+                
+            }
         }
     } );
 
     if($(".wrap").hasClass("is-mobile")){
         $(".search-book-detail__button").text("상세검색");
+        $(".form-search-book__bottom").hide();
+    }else{
+        $(".form-search-book__bottom").show();
     }
 
 
