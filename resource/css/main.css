@@ -83,7 +83,7 @@
 .book-list__info__detail dl{display:flex;}
 .book-list__info__detail dl+dl{margin-top: 1.2rem;}
 .book-list__info__detail dl dt{width: 15rem; color:#928f95; font-weight: 500; flex:none;}
-.book-list__info__detail dl dd{padding-left:1rem; font-weight: 500; line-height: normal; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+.book-list__info__detail dl dd{padding-left:3rem; font-weight: 500; line-height: normal; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
 
 .search-book__mobile-header{display: none;}
 .search-book__mobile-title{ font-size: 18px; font-weight: 600;}

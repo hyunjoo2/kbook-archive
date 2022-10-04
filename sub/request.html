@@ -57,7 +57,7 @@
                               <ul class="subMenu row left">
                                   <li><a href="">Archive</a></li>
                                   <li><a href="">Statistics</a></li>
-                                  <li><a href="">Request</a></li>
+                                  <li><a href="./request.html">Request</a></li>
                               </ul>
                           </div>
                           <div class="short-link">
@@ -355,7 +355,8 @@
                                 </div>
 
                                 <div class="request-bottom__button">
-                                    <button type="button" class="ui-button ui-button--width-160 ui-button--height-50 ui-button--color-deeppurple">등록요청</button>
+                                    <!-- 퍼블 전달사항 :: 클릭시 모달 표출 됩니다. -->
+                                    <a href="javascript:openModal('modal1');" class="ui-button ui-button--width-160 ui-button--height-50 ui-button--color-deeppurple modal">등록요청</a>
                                 </div>
 
                                 
@@ -428,6 +429,30 @@
                 </div>
             </div>
         </footer>
+
+
+        <!-- 모달 -->
+        <div class="layer-background"></div>
+        <div class="layer-wrap modal1">
+            <div class="layer-container">
+                <section class="ui-layer ui-layer__padding-6">
+                    <div class="ui-layer-header">
+                        <p class="ui-layer-title">등록 요청 <span>하시겠습니까?</span></p>
+                    </div>
+                    <div class="ui-layer__body">
+                        <div class="ui-layer__body-inner">
+                            <div class="ui-buttons">
+                                <div class="ui-buttons__inner">
+                                  <button type="button" class="ui-button ui-button--color-deeppurple ui-button--width-160 ui-button--height-50">요청하기</button>
+                                  <button type="button" class="ui-button ui-button--reset ui-button--width-160 ui-button--height-50 modal-close">취소하기</button>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- //모달 -->
 
        
     </div>

@@ -23,7 +23,8 @@ function openModal(modalname){
 }
 
 function modal(){
-    $(".layer-wrap, .ui-layer-header__close").on('click',function(){
+    $(".layer-background, .ui-layer-header__close, .modal-close").on('click',function(){
+        
         $(".layer-background").fadeOut(300);
         $(".layer-wrap").fadeOut(300);
       });
