@@ -50,14 +50,14 @@
 .search-total{display: flex; align-items: flex-end; padding-bottom:2rem; border-bottom:1px solid;}
 .search-total__left{display:flex;}
 .book-list__type{margin-left:5rem;}
-.book-list__type ul{display:flex;}
+.book-list__type ul{display:flex; align-items: center;}
 .book-list{margin-top: 5rem;}
 .book-list__wrap{ margin-top: 5rem; padding-bottom:5rem; border-bottom:1px solid;}
 /* .book-list__type-item{margin: 0 2rem;} */
 .book-list__type-item+.book-list__type-item{position: relative;}
-.book-list__type-item+.book-list__type-item::before{display: inline-block; margin: 0 2rem; width:1px; height:1.3rem; background:#c4c4c4; content: "";}
+.book-list__type-item+.book-list__type-item::before{display: inline-block; margin: 0 2rem; width:1px; height:1.3rem; background:#c4c4c4;  vertical-align: middle; content: "";}
 .book-list__type-item.is-active a{color:#6b3aae;}
-.book-list__type-item a{color:#747478; font-weight: 500;}
+.book-list__type-item a{ display:inline-block; vertical-align: middle; color:#747478; font-weight: 500;}
 
 .book-list__list{display: flex; flex-wrap: wrap; margin: -2.5rem;}
 .book-list__item{width:50%; padding: 2.5rem; box-sizing: border-box;}
@@ -127,7 +127,7 @@
     .search-book, .book-list{padding:0 16px;}
     .book-list{margin-top:30px}
     
-    .ui-button--height-50{height: 27px;}
+    .ui-button--height-50{height: 27px; line-height: 100%;}
     .ui-button{padding:0 11px;}
     .search-book--tab__content{padding:16px;}
     .form-search-book__button{width:42px;}
@@ -149,6 +149,7 @@
 
     .search-book__mobile-header{display: flex; justify-content: space-between; padding:20px 16px 10px 16px; border-bottom:1px solid #cecece;}
     .table-book{height:100%;  overflow-y: scroll;}
+
     .table-book table th{border-color:#e4e4e4;}
     .table-book>table tr:first-child>th{border-top:0;}
     .table-book>table tr:last-child>td{border-bottom:0;}

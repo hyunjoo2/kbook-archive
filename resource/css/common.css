@@ -308,7 +308,7 @@ h6{font-size:18px}
 
 /* parts:pagination */
 .pagination{ display:flex; justify-content: center; margin-top:3rem;}
-.pagination a{ display:flex; align-items: center; justify-content: center; width:4.5rem; height:4.5rem; font-size:1.8rem; border: solid 1px #e4e4e4; font-weight: 500;}
+.pagination a{ display:flex; align-items: center; justify-content: center; width:4.5rem; height:4.5rem; font-size:1.8rem; border: solid 1px #e4e4e4; font-weight: 500; box-sizing: border-box;}
 .pagination a+a{margin-left: .5rem;}
 .pagination .on{border-color:#b784ff; font-weight: 600;}
 .pagination  a i{display: inline-block; height:100%; background-repeat: no-repeat; background-size: 100%; background-position: center;}
@@ -351,7 +351,7 @@ h6{font-size:18px}
 
 .ui-button--icon{/* display: flex; align-items: center; justify-content: center; */ display: inline-block;}
 .ui-button--icon::before, .ui-button--icon::after{display:inline-block; content:""; background-size: cover; background-repeat: no-repeat; background-position: center;}
-.ui-button--icon-down::after{width: 2.1rem; height:1.8rem; margin-left: 1rem; background-image: url(../image/main/icon-download.png)}
+.ui-button--icon-down::after{width: 2.1rem; height:1.8rem; margin-left: 1rem; background-image: url(../image/main/icon-download.png); background-size: cover;}
 .ui-button--icon-down:hover::after{background-image: url(../image/main/icon-download__hover.png)}
 
 .ui-button--icon-right::after{width: .9rem; height:1.3rem; margin-left: 1rem; background-image: url(../image/common/icon/arrow-right__white--thin.png)}
@@ -554,4 +554,7 @@ background-color: #7200ad;
     .copyright{margin-top:9px; font-size:10px; }
     .footer-sns{margin-top:25px}
     .footer-sns ul{margin:0;}
+
+    .ui-button--icon-down::after{width:12px; height:11px;}
+    .pagination a{ display:inline-block; width:27px; height:27px; text-align: center; line-height: 27px;}
 }
