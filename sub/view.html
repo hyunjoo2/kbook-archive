@@ -82,7 +82,7 @@
                     <!-- <h1 class="visual-text">Archive</h1> -->
                 </section>
                 <section class="sub-content">
-                    <div class="sub-content__inner">
+                    <div class="sub-content__inner sub-content__view">
                         <div class="view-top">
                             <div class="view-top__inner">
                                 <div class="view-book-thumbnail">
@@ -300,10 +300,16 @@
                             </div>
 
                             <div class="view-bottom__button">
+                                <!-- 퍼블 전달사항 :: 이전글 다음글이 없을경우 button 클래스에 is-disabled 붙여주세요 -->
+                                <button type="button" class="view-prevNext view-prev is-disabled"><i class="view-prev__icon"></i>이전</button>
                                 <button type="button" class="ui-button ui-button--width-160 ui-button--height-50 ui-button--border-gray" onclick="location.href='../index.html'">목록</button>
+                                <button type="button" class="view-prevNext view-next">다음<i class="view-next__icon"></i></button>
                             </div>
+
                             
                         </div>
+
+                        
                     </div>
 
                     

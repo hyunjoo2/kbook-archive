@@ -1,6 +1,8 @@
 $(function(){
     hamberger();
     modal();
+    inputOn();
+    //selectCustom();
 });
 
 function hamberger(){
@@ -25,6 +27,56 @@ function modal(){
         $(".layer-background").fadeOut(300);
         $(".layer-wrap").fadeOut(300);
       });
+}
+
+
+
+// var oldVal="";
+// var btnPayment=$('.btn-payment');
+// $(".payment-btn-active").on("change keyup paste", function() {
+//   var currentVal = $(this).val();
+//   if(currentVal == oldVal) {
+//     btnPayment.attr('disabled',true)
+//   } else {
+//     btnPayment.attr('disabled',false)
+//   }
+// });
+ 
+function inputOn(){
+    
+    $(".ui-input").on("change keyup paste", function() {
+        var currentVal = $(this).val();
+        if(currentVal == "") {
+            $(this).removeClass("is-inputed");
+        } else {
+            $(this).addClass("is-inputed");
+        }
+    });
+
+    /* 셀렉트박스 보이게 하기 */
+    $("body").on("click", ".ui-select__custom-title", function () {
+        $(this).next().toggle();
+        $(this).parent().addClass("is-show");
+    })
+
+    /* 셀렉트 박스 옵션 선택 */
+    $(".ui-select__custom li").on("click", function () {
+        var text = $(this).html();
+        $(this).parent().parent().find(".ui-select__custom-title").html(text);
+        $(this).parent().toggle();
+    })
+    
+    /* 셀렉트 박스 이외 선택시 보이지 않게 하기 */
+    $("body").on("click", function(e){
+        if($(".ui-select__custom").css("display") == "block"){
+            if($(".ui-select__custom-wrap").has(e.target).length == 0){
+                $(".ui-select__custom").hide();
+                //$(".ui-select__custom-wrap").removeClass("is-show");
+            }
+        }
+    
+    })
+
 }
 
 
