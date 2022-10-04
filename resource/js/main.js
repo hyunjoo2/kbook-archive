@@ -3,6 +3,7 @@ $(function(){
     searchBookDetail();
     clickTab();
     windowMobile();
+    resetCheck();
 });
 
 function mainOnly(){
@@ -100,4 +101,19 @@ function windowMobile(){
         $("header").removeClass("is-hide");
         $("wrap").removeClass("is-hidden");
     })
+}
+
+
+function resetCheck(){
+    $(".table-book .ui-checkbox-block").change(function () {
+        var ckList = $(this).find("input[type=checkbox]");
+        
+        $(".ui-button--reset").on("click", function(){
+            if (ckList.prop("checked") == true) {
+                ckList.prop("checked", false);
+            } else {
+            }
+        })
+    });
+   
 }

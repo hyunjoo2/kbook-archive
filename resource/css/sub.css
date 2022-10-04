@@ -122,6 +122,7 @@
 
 @media screen and (max-width:720px){
 	.sub-visual{height:260px;}
+	.sub-visual .visual-text{font-size: 36px;}
 
 	.table-book__view--table, .table-book__view--table>tbody{display: block; width:100%;}
     .table-book__view--table>tbody>tr, .table-book__view--table>tbody>tr>td{display: flex; flex-direction: column;}
