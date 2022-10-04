@@ -8,21 +8,22 @@
 
 
 /* main-content */
+.main .footer__inner{margin-top: 14rem;}
 .main-content{ max-width: 140rem; margin-top: -14.6rem; margin-left: auto; margin-right: auto;}
 .search-book--tab__ul{display: flex;}
 .search-book--tab__item{  height:6.1rem; flex:1;background:rgba(0,0,0,0.33); border:1px solid rgba(255,255,255,0.2); border-bottom:0; box-sizing: border-box;}
 .search-book--tab__item+.search-book--tab__item{margin-left: -1px;}
 .search-book--tab__link{ display:flex; align-items: center; justify-content: center; width:100%; height:100%; font-size:1.8rem; color: #c7c4c8;}
 .search-book--tab__item.is-active{ position:relative; background: #ffffff; }
-.search-book--tab__item.is-active::before{position: absolute;top: -1px; left:-1px; width:calc(100% + 2px); height:3px; background: #6b3aae;content: "";}
-.search-book--tab__item.is-active .search-book--tab__link{font-size:2.2rem; color: #6b3aae; font-weight:500;}
+.search-book--tab__item.is-active::before{position: absolute;top: -1px; left:-1px; width:calc(100% + 2px); height:3px; background: #be87ff;content: "";}
+.search-book--tab__item.is-active .search-book--tab__link{font-size:2.2rem; color: #6b3aae; font-weight:600;}
 .search-book--tab__content{padding:3rem 6rem; background:#ffffff; box-shadow: 1.5rem 1.5rem 2.8rem rgba(15,0,35,.15);}
 
 .form-search-book__top{display: flex;  }
 .form-search-book{position: relative; height:5.5rem; border:2px solid #6b3aae; box-sizing: border-box; flex:1;}
 .form-search-book__input{ width:calc(100% - 7rem ); height:100%; border:0; text-indent: 2rem;}
 .form-search-book__input::placeholder{font-size:1.8rem; color: #747478;}
-.form-search-book__button{position:absolute; top:0; right:0; width:7rem; height:100%; background: url(../image/common/icon/icon_finder_b.png) no-repeat center; background-size: 2.5rem; border: 0;}
+.form-search-book__button{position:absolute; top:0; right:0; width:7rem; height:100%; background: url(../image/common/icon/icon_finder_b.png) no-repeat center; background-size: 3rem; border: 0;}
 
 .search-book-detail{margin-left: .5rem;}
 .search-book-detail__button{display:flex; align-items: center; justify-content: center; width:14.8rem; height:100%; padding:0; font-size:1.8rem; color:#ffffff; background-color: #b784ff; border:1px solid #aa6dff; text-shadow: .3rem .3rem .5rem rgba(35,15,64,0.18); transition:all .2s;}
@@ -31,7 +32,7 @@
 .search-book-detail__button.is-open::after{background: url(../image/common/icon/arrow-down__black.png) no-repeat center; background-size:cover;}
 .search-book-detail__button.is-open:hover{border-color:#6c489d;}
 
-.form-search-book__bottom{ display:none; margin-top:3rem;}
+.form-search-book__bottom{ margin-top:3rem;}
 
 .icon-booktable{width:4.2rem; height:4.2rem;margin-right:1rem;}
 .icon-wrap{display: flex; align-items: center;  font-size: 1.8rem; font-weight: 500;}
@@ -73,7 +74,7 @@
 .book-list__link:hover .book-list__image img{transform: translate(-50%, -50%) scale(1.1);}
 .book-list__link:hover .book-list__caption{background:#b784ff; border: solid 2px #b381f9;}
 
-.book-title{ width:100%; margin-top:1rem; text-overflow: ellipsis; white-space: nowrap; overflow:hidden; font-size:2.6rem; font-weight: 500;}
+.book-title{ width:100%; margin-top:1rem; text-overflow: ellipsis; white-space: nowrap; overflow:hidden; font-size:2.6rem; font-weight: 500; letter-spacing: -1px;}
 .book-title__for{ margin-top:1rem; text-overflow: ellipsis; white-space: nowrap; overflow:hidden; font-size: 2rem; font-weight: 300; color: #747478; }
 
 .book-list__info__detail{ position:relative; margin-top:2.5rem;  padding:3rem 2rem 3rem 0;}
@@ -82,7 +83,7 @@
 .book-list__info__detail dl{display:flex;}
 .book-list__info__detail dl+dl{margin-top: 1.2rem;}
 .book-list__info__detail dl dt{width: 15rem; color:#928f95; font-weight: 500; flex:none;}
-.book-list__info__detail dl dd{padding-left:4rem; font-weight: 500; line-height: normal;}
+.book-list__info__detail dl dd{padding-left:1rem; font-weight: 500; line-height: normal; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
 
 .search-book__mobile-header{display: none;}
 .search-book__mobile-title{ font-size: 18px; font-weight: 600;}

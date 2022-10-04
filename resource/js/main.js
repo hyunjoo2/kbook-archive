@@ -1,14 +1,25 @@
 $(function(){
+    mainOnly();
     searchBookDetail();
     clickTab();
     windowMobile();
 });
 
+function mainOnly(){
+    $(".main-content").parents().find(".container").next("footer").addClass("main");
+
+}
 function searchBookDetail(){
     $(".search-book-detail__button").click(function(){
         $(this).toggleClass("is-open");
-        $(this).text("상세닫기");
         $(".form-search-book__bottom").slideToggle();
+
+        if($(".search-book-detail__button").hasClass("is-open")){
+            $(".search-book-detail__button").text("상세닫기");
+        }else{
+            $(".search-book-detail__button").text("상세보기");
+            
+        }
     })
 }
 

@@ -20,7 +20,7 @@ body.bind{overflow:hidden;}
 .container{position:relative; top: 0; z-index:0;}
 
 /* header */
-header{position:absolute;top:0;left:0;width:100%;height:10rem;background-color:rgb(0 0 0 / 20%); z-index:1;}
+header{position:absolute;top:0;left:0;width:100%;height:10rem;/* background:linear-gradient(0deg, rgba(255,255,255,0) 30%, rgba(0,0,0,.35) 100%); */     box-shadow: inset 0px 60px 50px 0px rgb(0 0 0 / 28%); z-index:1; }
 .header-logo__link{ display: flex; align-items: center; justify-content: center; width:18.7rem; height:100%;}
 .header-logo__link img{max-width:100%; max-height:100%;}
 header h1{margin-left:3rem;}
@@ -31,12 +31,12 @@ header h1{margin-left:3rem;}
 
 .subMenu{ display:flex;  position:relative; height:100%; align-items:center;}
 .subMenu li + li{margin-left:28px;}
-.subMenu a{letter-spacing:0.5px;font-size:1.8rem;font-weight:300;color:#fff;}
+.subMenu a{letter-spacing:0.5px;font-size:1.7rem;font-weight:300;color:#fff;}
 .subMenu.left a {font-weight:600;}
 
 .short-link{display: flex; margin-left:5rem;}
-.short-link__button{width:13rem; height:100%; border:0; font-size:1.5rem; line-height: 1.7rem; font-weight: 500; color:#ffffff;}
-.short-link__button span{font-size:1.2rem;}
+.short-link__button{width:13rem; height:100%; border:0; font-size:1.5rem; line-height: 1.7rem; font-weight: 500; color:#ffffff; text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.28);}
+.short-link__button span{font-size:1.2rem; text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.28);}
 .short-link__button:first-child{background:#7654a2;}
 .short-link__button:last-child{background:#603893;}
 
@@ -343,7 +343,7 @@ h6{font-size:18px}
 .ui-button--color-deeppurple{background-color:#5e309c; border: solid 1px #400b88; color:#ffffff;}
 .ui-button--color-deeppurple:hover{border-color: #400b88;   background-color: #542397;}
 
-.ui-button--reset{border: solid 1px #cfcad5; background-color: #f6f7f9; }
+.ui-button--reset{border: solid 1px #cfcad5; background-color: #f6f7f9; font-weight: 500; }
 .ui-button--reset:hover{border-color: #6c489d;}
 
 .ui-button--border-gray{border: solid 1px #cfcad5; background-color: #ffffff; color:#000000; font-weight: 500;}
