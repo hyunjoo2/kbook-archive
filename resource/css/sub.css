@@ -154,6 +154,8 @@
 	.filebox{flex-direction: column;}
 	.filebox label{margin-bottom: 6px;}
 	.ui-select__custom-title{font-size: 13px;}
+
+	.layer-thumb{width:80%;}
 } 
 
 
