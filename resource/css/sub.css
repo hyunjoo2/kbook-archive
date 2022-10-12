@@ -12,7 +12,7 @@
 .view-top__inner::before{position: absolute; right:-100%; width:100%; height:100%; background:#ffffff; content:""}
 .view-book-thumbnail{ /* position:absolute; */ max-width:28.8rem; max-height:42rem; margin:-6rem 5rem 0; box-shadow: .8rem .8rem 2.8rem rgba(15, 0, 35, .18);}
 
-.book-lang, .book-lang span{color:#6c489d; font-size: 2.4rem; font-weight: 500; }
+.book-lang, .book-lang span, .nation-name{color:#6c489d; font-size: 2.4rem; font-weight: 500; }
 .book-lang{display: flex; align-items: center;}
 .lang-img{width:5.2rem; height:3.4rem; margin-right:2rem; border:1px solid #f5f4f6; box-sizing: border-box; border-radius: 0 0 2rem 0 ; overflow: hidden;}
 .lang-img img{max-width: 100%; max-height: 100%;}

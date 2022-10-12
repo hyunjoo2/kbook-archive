@@ -149,7 +149,32 @@
     .table-book .ui-check-list__list li{width:calc(100% / 3)}
 
     .search-book__mobile-header{display: flex; justify-content: space-between; padding:20px 16px 10px 16px; border-bottom:1px solid #cecece;}
-    .table-book{height:100%;  overflow-y: scroll;}
+    .table-book{height:100%;  overflow-y: scroll; overflow:scroll;
+        -webkit-overflow-scrolling:touch;}
+    /* .table-book::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+
+    .table-book::-webkit-scrollbar:vertical {
+        width: 12px;
+    }
+
+    .table-book::-webkit-scrollbar:horizontal {
+        height: 12px;
+    }
+
+    .table-book::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, .5);
+        border-radius: 10px;
+        border: 2px solid #ffffff;
+    }
+
+    .table-book::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: #ffffff;
+    } */
+
+   
 
     /* ::-webkit-scrollbar { width: 3px;  }
     ::-webkit-scrollbar-thumb { background: #a9a9a9;}  */
