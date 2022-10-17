@@ -58,7 +58,7 @@
 .ui-require::before{ position:absolute; left: 3px; width:10px; height:4px; content:"*"; color:#e70000;}
 
 .table-normal tr+tr{border-top:1px solid #c2bfc8;}
-.table-normal th, .table-normal td{ height:7rem; padding:10px 20px; font-size:1.8rem; box-sizing: border-box; letter-spacing: -1px; border:0;}
+.table-normal th, .table-normal td{ height:7rem; padding:1rem; font-size:1.8rem; box-sizing: border-box; letter-spacing: -1px; border:0;}
 .table-normal th{text-align: left; font-weight: 500; border-right-color:#c2bfc8;}
 .table-normal>table{border-top:1px solid #594872; border-bottom:1px solid #594872}
 .table-normal.table-ver tr:first-child th, .table-normal.table-ver tr:first-child td{border-top:0;}
@@ -156,6 +156,11 @@
 	.ui-select__custom-title{font-size: 13px;}
 
 	.layer-thumb{width:80%;}
+
+	.ui-button--height-50.modal{height:32px; line-height:32px; }
+	.ui-button--width-160{width:12.3rem}
+    .filebox label, .ui-button--width-160{font-size:13px;}
+    
 } 
 
 

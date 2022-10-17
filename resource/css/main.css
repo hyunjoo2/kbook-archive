@@ -128,7 +128,7 @@
     .search-book, .book-list{padding:0 16px;}
     .book-list{margin-top:30px}
     
-    .ui-button--height-50{height: 27px; line-height: 100%;}
+    .ui-button--height-50{height: 27px; /* line-height: 100%; */ line-height: 27px;}
     .ui-button{padding:0 11px;}
     .search-book--tab__content{padding:16px;}
     .form-search-book__button{width:42px;}
@@ -194,6 +194,8 @@
 
     .form-search-book{height:40px;}
     .form-search-book__bottom__inner .ui-buttons__inner{width:100%;}
+
+    
     
     
 }

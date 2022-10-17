@@ -507,7 +507,7 @@ background-color: #7200ad;
 }
 @media screen and (max-width:720px){
     html{font-size: calc(62.5% / 1.5);}
-    input, select, .ui-form input, .ui-form select, .ui-select__custom-wrap{font-size:13px; line-height: 100%;}
+    input, select, .ui-form input, .ui-form select, .ui-select__custom-wrap{font-size:13px; /* line-height: 100%; */ line-height: 4.8rem; }
     header{height: 87px; background:transparent}
     .header-logo__link{width:160px}
     .header__inner{padding:0 16px;}
