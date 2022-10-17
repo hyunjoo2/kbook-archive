@@ -45,7 +45,7 @@ function modal(){
  
 function inputOn(){
     
-    $(".ui-input").on("change keyup paste", function() {
+    $(".ui-input, .ui-textarea").on("change keyup paste", function() {
         var currentVal = $(this).val();
         if(currentVal == "") {
             $(this).removeClass("is-inputed");
@@ -62,6 +62,7 @@ function inputOn(){
             $(this).removeClass("is-inputed");
         }
     });
+
 
     /* 셀렉트박스 보이게 하기 */
     $("body").on("click", ".ui-select__custom-title", function () {
@@ -85,7 +86,24 @@ function inputOn(){
             }
         }
     
-    })
+    });
+
+    //파일명 추출 
+    var fileTarget = $('.filebox .upload-hidden');
+
+    fileTarget.on('change', function(){  // 값이 변경되면
+        if(window.FileReader){  // modern browser
+        var filename = $(this)[0].files[0].name;
+        } 
+        else {  // old IE
+        var filename = $(this).val().split('/').pop().split('\\').pop();  // 파일명만 추출
+        }
+        
+        // 추출한 파일명 삽입
+        $(this).siblings('.upload-name').val(filename);
+        $(this).siblings('.upload-name').addClass("is-inputed");
+
+    });
 
 }
 
