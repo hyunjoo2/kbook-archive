@@ -54,6 +54,15 @@ function inputOn(){
         }
     });
 
+    $(".ui-select").on("change keyup paste", function() {
+        var result = $('.ui-select option:selected').val();
+        if(result == "") {
+            $(this).addClass("is-inputed");
+        } else {
+            $(this).removeClass("is-inputed");
+        }
+    });
+
     /* 셀렉트박스 보이게 하기 */
     $("body").on("click", ".ui-select__custom-title", function () {
         $(this).next().toggle();
