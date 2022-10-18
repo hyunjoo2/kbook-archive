@@ -4,7 +4,7 @@
 .sub-content__inner{ position:relative; max-width: 140rem; margin: 0 auto; background: #ffffff;}
 .sub-visual{ display: flex; align-items: center; justify-content: center; height: 44rem; background-image: url(../image/sub/visual_sub.jpg); background-repeat: repeat; background-position: center; background-size: cover;}
 .visual-text{ font-size: 6rem; font-weight:600; color:#ffffff;}
-.sub-visual .visual-text{margin-top: 5rem;}
+.sub-visual .visual-text{margin-top: 5.5rem;}
 
 
 /* view */
@@ -74,7 +74,7 @@
 
 .filebox label { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 12.3rem; height: 4.8rem; margin-right: .6rem; font-size: 1.7rem;  cursor: pointer; box-sizing: border-box; flex:none; }
 
-.filebox .upload-name { display: inline-block; font-size: inherit; font-family: inherit; line-height: normal; vertical-align: middle; background: #ffffff; border: 1px solid #e4e4e4; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+.filebox .upload-name { display: inline-block; font-size: inherit; font-family: inherit; line-height: normal; vertical-align: middle; background: #ffffff; border: 1px solid #e4e4e4; -webkit-appearance: none; -moz-appearance: none; appearance: none; opacity: 1; }
 .filebox .upload-name.is-inputed{border-color:#594872;}
 .request-bottom__button{margin-toP:4rem; text-align:center;}
 
@@ -161,12 +161,14 @@
 
 	.ui-button--height-50.modal{font-size: 15px; height:40px; line-height:40px; }
 	.ui-button--width-160{width:12.3rem}
-    .filebox label, .ui-button--width-160{font-size:13px;}
+    .filebox label, .ui-button--width-160{font-size:15px;}
 
 	.require-text{font-size:1.8rem}
 	.ui-form select{width:100%;}
 
 	.ui-textarea{font-size:13px; line-height:2.5rem}
+
+	.table-item table col:nth-child(1){width:15rem !important;}
 	
     
 } 

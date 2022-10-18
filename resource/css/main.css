@@ -21,7 +21,7 @@
 
 .form-search-book__top{display: flex;  }
 .form-search-book{position: relative; height:5.5rem; border:2px solid #6b3aae; box-sizing: border-box; flex:1;}
-.form-search-book__input{ width:calc(100% - 7rem ); height:100%; border:0; text-indent: 2rem;}
+.form-search-book__input{ width:calc(100% - 7rem ); height:100%; border:0; text-indent: 1.5rem;}
 .form-search-book__input::placeholder{font-size:1.8rem; color: #747478;}
 .form-search-book__button{position:absolute; top:0; right:0; width:7rem; height:100%; background: url(../image/common/icon/icon_finder_b.png) no-repeat center; background-size: 3rem; border: 0;}
 
@@ -54,9 +54,10 @@
 .book-list{margin-top: 5rem;}
 .book-list__wrap{ margin-top: 5rem; padding-bottom:5rem; border-bottom:1px solid;}
 /* .book-list__type-item{margin: 0 2rem;} */
+.book-list__type-item{display: flex; align-items: center;}
 .book-list__type-item+.book-list__type-item{position: relative;}
 .book-list__type-item+.book-list__type-item::before{display: inline-block; margin: 0 2rem; width:1px; height:1.3rem; background:#c4c4c4;  vertical-align: middle; content: "";}
-.book-list__type-item a{ display:inline-block; vertical-align: middle; color:#747478; font-size:2rem; font-weight: 400;}
+.book-list__type-item a{ display:inline-block; vertical-align: middle; color:#747478; font-size:2rem; font-weight: 400; line-height:0;}
 .book-list__type-item.is-active a{color:#6b3aae; font-weight: 600;}
 
 .book-list__list{display: flex; flex-wrap: wrap; margin: -2.5rem;}
@@ -94,6 +95,7 @@
 .is-mobile .form-search-book__bottom__inner{ display:flex; flex-direction: column; height:100%; background:#ffffff; border-radius: 10px; overflow:hidden;}
 
 
+.data_number { display:flex; align-items:center;  height: 27px;}
 
 
 
@@ -135,7 +137,7 @@
     .search-book--tab__content{padding:16px; box-shadow: 0.5rem 0.5rem 1.8rem rgba(15, 0, 35, 0.15);}
     .form-search-book__button{width:42px; background-size: 18px;}
 
-    .search-book-detail__button{width:70px; height:40px; padding:0; font-size: 14px;}
+    .search-book-detail__button{width:70px; height:40px; padding:0; font-size: 14px; line-height:40px;}
     .search-book-detail__button::after{display:none;}
     
     .icon-wrap{font-size:16px;}
@@ -196,7 +198,7 @@
 
     .form-search-book{height:40px;}
     .form-search-book__bottom__inner .ui-buttons__inner{width:100%;}
-    .form-search-book__input, .form-search-book__input::placeholder{font-size: 14px; line-height: 40px;}
+    .form-search-book__input, .form-search-book__input::placeholder{font-size: 14px; line-height: 39px;}
 
     .table-book .ui-label{align-items: flex-start;}
     .table-book .ui-checkbox-object{margin-top:2px;}
