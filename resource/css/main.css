@@ -201,7 +201,7 @@
     .form-search-book__input, .form-search-book__input::placeholder{font-size: 14px; line-height: 39px;}
 
     .table-book .ui-label{align-items: flex-start;}
-    .table-book .ui-checkbox-object{margin-top:2px;}
+    .table-book .ui-checkbox-object{margin-top:1px;}
 
     
     
