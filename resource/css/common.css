@@ -499,7 +499,8 @@ background-color: #7200ad;
   /* 개발 노이미지 추가 */
   .layer-thumb .ui-layer{padding: 0;}
   .layer-thumb .ui-layer .thumbnail-image{ min-width: 28rem; min-height: 28rem; background:#f6f7f9 url(/resources/images/common/no_img.jpg) no-repeat center; }
-  .layer-thumb .ui-layer img{padding: 4rem; box-sizing: border-box;}
+  .layer-thumb .ui-layer img{padding: 4rem; box-sizing: border-box;     max-width: 100%; max-height: 110vh;}
+  .layer-thumb .layer-container{ max-width: 80%; max-height: 90vh;}
 
 /*============================= responsive =============================*/
 @media screen and (max-width:1024px){
