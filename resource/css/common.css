@@ -356,10 +356,13 @@ h6{font-size:18px}
 
 .ui-button--icon-right::after{width: .9rem; height:1.3rem; margin-left: 1rem; background-image: url(/resources/images/common/icon/arrow-right__white--thin.png)}
 
+.ui-button--height-48{height: 4.8rem; line-height: 4.8rem;}
 .ui-button--height-50{height: 5rem; line-height: 5rem;}
 .ui-button--width-110{width:11rem; padding:0; font-weight: 500;}
 .ui-button--width-160{width:16rem;}
 .ui-layer.ui-layer__padding-6{padding:6rem;}
+
+.flex-none{flex:none;}
 
 
 /* parts:forms */
