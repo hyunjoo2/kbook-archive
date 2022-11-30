@@ -4,6 +4,7 @@ $(function(){
     clickTab();
     windowMobile();
     resetCheck();
+	domesticCheck();
 });
 
 function mainOnly(){
@@ -54,7 +55,7 @@ function windowMobile(){
 
     }else{
         $(".wrap").removeClass("is-mobile");
-        $(".form-search-book__bottom").show();
+        //$(".form-search-book__bottom").show();
         if($(".search-book-detail__button").hasClass("is-open")){
             $(".search-book-detail__button").text("상세닫기");
         }else{
@@ -77,7 +78,7 @@ function windowMobile(){
             });
         } else {
             $(".wrap").removeClass("is-mobile");
-            $(".form-search-book__bottom").show();
+            //$(".form-search-book__bottom").show();
             if($(".search-book-detail__button").hasClass("is-open")){
                 $(".search-book-detail__button").text("상세닫기");
             }else{
@@ -116,4 +117,17 @@ function resetCheck(){
         })
     });
    
+}
+
+
+function domesticCheck(){
+    $(".ui-radio-block").change(function () {
+        var domeChk = $(this).find("input[type=radio]#radio2");
+        var ckList = $(".ui-check-list__nation, .ui-check-list__lang").find(".ui-checkbox-block input[type=checkbox]");
+        if (domeChk.prop("checked") == true) {
+            ckList.attr('disabled', '').prop('disabled', true);
+        } else {
+            ckList.attr('disabled', '').prop('disabled', false);
+        }
+    });
 }

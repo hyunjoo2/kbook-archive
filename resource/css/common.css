@@ -378,6 +378,8 @@ h6{font-size:18px}
 .ui-checkbox:focus + .ui-label .ui-checkbox-object,.ui-radio:focus + .ui-label .ui-radio-object {  outline-width: 1px;  outline-style: dotted;}
 .ui-checkbox:checked + .ui-label .ui-checkbox-object { background-color: #b784ff; border-color:#aa6dff; background-image: url('/resources/images/common/icon/icon-check.png'); background-repeat: no-repeat; background-position: center; background-size: 1.2rem .8rem;}
 .ui-radio:checked + .ui-label .ui-label__text, .ui-checkbox:checked + .ui-label .ui-label__text{color:#000000;}
+.ui-checkbox:disabled + .ui-label .ui-checkbox-object { border-color: #e3e5e8; background-color: #e3e5e8; background-image: none;}
+.ui-checkbox:disabled + .ui-label .ui-label__text {color: #abb2bd;}
 
 
 .ui-radio-object::before {    content: '';    display: block;    position: absolute;    top: 50%;    left: 50%;    margin: -5px 0 0 -5px;    width: 1rem;    height: 1rem;    border-radius: 100%;    background: #b784ff;    opacity: 0;  }
@@ -502,7 +504,7 @@ background-color: #7200ad;
   /* 개발 노이미지 추가 */
   .layer-thumb .ui-layer{padding: 0;}
   .layer-thumb .ui-layer .thumbnail-image{ min-width: 28rem; min-height: 28rem; background:#f6f7f9 url(/resources/images/common/no_img.jpg) no-repeat center; }
-  .layer-thumb .ui-layer img{ max-width: 33vw; max-height: 90vh; padding: 4rem; box-sizing: border-box; }
+  .layer-thumb .ui-layer img{ max-width: 33vw; max-height: 110vh; padding: 4rem; box-sizing: border-box; }
   .layer-thumb .layer-container{ max-width: 100%; max-height: 90vh;}
 
 /*============================= responsive =============================*/
