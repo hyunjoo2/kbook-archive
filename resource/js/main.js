@@ -91,7 +91,7 @@ function windowMobile(){
         $(".search-book-detail__button").text("상세검색");
         $(".form-search-book__bottom").hide();
     }else{
-        $(".form-search-book__bottom").show();
+        //$(".form-search-book__bottom").show();
     }
 
 

@@ -32,7 +32,7 @@
 .search-book-detail__button.is-open::after{background: url(/resources/images/common/icon/arrow-down__black.png) no-repeat center; background-size:cover;}
 .search-book-detail__button.is-open:hover{border-color:#6c489d;}
 
-.form-search-book__bottom{ margin-top:3rem;}
+.form-search-book__bottom{ display:none; margin-top:3rem;}
 
 .icon-booktable{width:4.2rem; height:4.2rem;margin-right:1rem;}
 .icon-wrap{display: flex; align-items: center;  font-size: 1.8rem; font-weight: 500;}
