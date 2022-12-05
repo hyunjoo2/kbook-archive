@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF_8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta content="width=device-width,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" name="Viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="width=device-width,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"
+        name="Viewport" />
     <link rel="shortcut icon" href="../resource/image/common/icon/favicon.png" type="image/x-icon">
-    
+
     <link rel="stylesheet" href="../resource/css/reset.css">
     <link rel="stylesheet" href="../resource/css/font.css">
     <link rel="stylesheet" href="../resource/css/swiper.css">
@@ -18,10 +20,11 @@
     <script type="text/javascript" src="../resource/js/swiper.min.js"></script>
     <script type="text/javascript" src="../resource/js/slick.js"></script>
     <script type="text/javascript" src="../resource/js/common.js"></script>
-    
-    <script type="text/javascript" src="../resource/js/main.js"></script>   
+
+    <script type="text/javascript" src="../resource/js/main.js"></script>
     <title>K-BOOK</title>
 </head>
+
 <body>
     <div class="wrap">
         <dl id="skip_nav">
@@ -31,8 +34,9 @@
                 <a href="#contents">본문 바로가기</a>
             </dd>
         </dl>
-    
-        <header>  <!-- header -->
+
+        <header>
+            <!-- header -->
             <div class="header__inner">
                 <h1>
                     <a href="../index.html" title="홈 이동" class="header-logo__link">
@@ -42,95 +46,182 @@
 
                 <div class="header--right">
                     <div class="header--right__inner">
-                      <button class="subMenu-button"><span></span><span></span><span></span></button>
-                      <div class="subMenu-wrap">
-                        
-                        <div class="subMenu-header">
-                          <a href="../index.html" title="홈 이동" class="header-logo__link">
-                              <img src="../resource/image/common/img_logo_head.png" alt="K-BOOK">
-                          </a>
-                          <button class="subMenu-button-close"><span></span><span></span></button>
+                        <button class="subMenu-button"><span></span><span></span><span></span></button>
+                        <div class="subMenu-wrap">
+
+                            <div class="subMenu-header">
+                                <a href="../index.html" title="홈 이동" class="header-logo__link">
+                                    <img src="../resource/image/common/img_logo_head.png" alt="K-BOOK">
+                                </a>
+                                <button class="subMenu-button-close"><span></span><span></span></button>
+                            </div>
+
+                            <div class="subMenu-body">
+                                <div class="subMenu-list row">
+                                    <ul class="subMenu row left">
+                                        <li><a href="../index.html">Archive</a></li>
+                                        <li><a href="">Statistics</a></li>
+                                        <li><a href="./request.html">Request</a></li>
+                                    </ul>
+                                </div>
+                                <div class="short-link">
+                                    <button type="button" class="short-link__button"
+                                        onclick="window.open('https://k-book.or.kr/user/main/index')">K - BOOK <br>
+                                        <span>바로가기</span></button>
+                                    <button type="button" class="short-link__button"
+                                        onclick="window.open('https://www.kbook-eng.or.kr/')">WEBZINE <br>
+                                        <span>바로가기</span></button>
+                                </div>
+                            </div>
                         </div>
-                        
-                        <div class="subMenu-body">
-                          <div class="subMenu-list row">
-                              <ul class="subMenu row left">
-                                  <li><a href="../index.html">Archive</a></li>
-                                  <li><a href="">Statistics</a></li>
-                                  <li><a href="./request.html">Request</a></li>
-                              </ul>
-                          </div>
-                          <div class="short-link">
-                              <button type="button" class="short-link__button" onclick="window.open('https://k-book.or.kr/user/main/index')">K - BOOK <br>
-                                  <span>바로가기</span></button>
-                              <button type="button" class="short-link__button" onclick="window.open('https://www.kbook-eng.or.kr/')">WEBZINE <br>
-                                  <span>바로가기</span></button>
-                          </div>
-                        </div>
-                      </div>
                     </div>
                 </div>
 
 
             </div>
-            
-        </header>
-        <div class="container">  <!-- contents -->
-            <div class="contents">
-               <div class="contents__inner">
-                <section class="sub-visual">
-                    <h1 class="visual-text">Request</h1>
-                </section>
-                <section class="sub-content">
-                    <div class="sub-content__inner">
-                        <div class="request-wrap">
-                            <div class="request-wrap__inner">
 
-                                <!-- 2022.11.17 : add : 추가 -->
-                                <div class="table-item">
-                                    <div class="form-flex flex-row">
-                                        <div class="flex-cell flex-row__cell">
-                                            <div class="table-item">
-                                                <div class="table-normal table-ver">
-                                                    <table>
-                                                        <colgroup>
-                                                            <col style="width:21rem">
-                                                            <col style="width:auto">
-                                                        </colgroup>
-                                                        <tbody>
-                                                            <tr>
-                                                                <th>ISBN 검색</th>
-                                                                <td>
-                                                                    <div class="d-flex">
-                                                                        <div class="ui-form w_100">
-                                                                            <input type="text" class="ui-input" />
+        </header>
+        <div class="container">
+            <!-- contents -->
+            <div class="contents">
+                <div class="contents__inner">
+                    <section class="sub-visual">
+                        <h1 class="visual-text">Request</h1>
+                    </section>
+                    <section class="sub-content">
+                        <div class="sub-content__inner">
+                            <div class="request-wrap">
+                                <div class="request-wrap__inner">
+
+                                    <!-- 2022.11.17 : add : 추가 -->
+                                    <div class="table-item">
+                                        <div class="form-flex flex-row">
+                                            <div class="flex-cell flex-row__cell">
+                                                <div class="table-item">
+                                                    <div class="table-normal table-ver">
+                                                        <table>
+                                                            <colgroup>
+                                                                <col style="width:21rem">
+                                                                <col style="width:auto">
+                                                            </colgroup>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th>ISBN 검색</th>
+                                                                    <td>
+                                                                        <div class="d-flex">
+                                                                            <div class="ui-form w_100">
+                                                                                <input type="text" class="ui-input" />
+                                                                            </div>
+                                                                            <button type="button"
+                                                                                class="ui-button ui-button--color-purple1 ui-button--height-48 mr-0 flex-none">검색</button>
+
                                                                         </div>
-                                                                        <button type="button" class="ui-button ui-button--color-purple1 ui-button--height-48 mr-0 flex-none">검색</button>
-                                                                        
-                                                                    </div>
-                                                                    
-                                                                </td>
-                                                                
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
+
+                                                                    </td>
+
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
                                                 </div>
                                             </div>
+
                                         </div>
-                                        
                                     </div>
-                                </div>
-                                <!-- //2022.11.17 : add : 추가 -->
+                                    <!-- //2022.11.17 : add : 추가 -->
 
-                                <div class="request-top__text mt_30"><span class="ui-require"></span><p class="require-text">필수 입력 항목</p></div>
+                                    <div class="request-top__text mt_30"><span class="ui-require"></span>
+                                        <p class="require-text">필수 입력 항목</p>
+                                    </div>
 
 
-                                
-                                
-                                <div class="table-item">
-                                    <div class="form-flex flex-row">
-                                        <div class="flex-cell flex-row__cell">
-                                            <div class="table-item">
+
+
+                                    <div class="table-item">
+                                        <div class="form-flex flex-row">
+                                            <div class="flex-cell flex-row__cell">
+                                                <div class="table-item">
+                                                    <div class="table-normal table-ver">
+                                                        <table>
+                                                            <colgroup>
+                                                                <col style="width:21rem">
+                                                            </colgroup>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th>국내도서명 <span class="ui-require"></span></th>
+                                                                    <td>
+                                                                        <div class="ui-form">
+                                                                            <input type="text" class="ui-input" />
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>국내도서 발행년도 <span class="ui-require"></span></th>
+                                                                    <td>
+                                                                        <div class="d-flex">
+                                                                            <div class="ui-form">
+                                                                                <select name="" id="" class="ui-select">
+                                                                                    <option value="">년도 선택</option>
+                                                                                    <option value="">2022</option>
+                                                                                    <option value="">2021</option>
+                                                                                    <option value="">2020</option>
+                                                                                    <option value="">2019</option>
+                                                                                    <option value="">2018</option>
+                                                                                    <option value="direct">직접입력</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <div class="ui-form input-direct">
+                                                                                <input type="text" class="ui-input" />
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>글저자 <span class="ui-require"></span></th>
+                                                                    <td>
+                                                                        <div class="ui-form">
+                                                                            <input type="text" class="ui-input" />
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>그림 저자</th>
+                                                                    <td>
+                                                                        <div class="ui-form">
+                                                                            <input type="text" class="ui-input" />
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>원출판사 <span class="ui-require"></span></th>
+                                                                    <td>
+                                                                        <div class="ui-form">
+                                                                            <input type="text" class="ui-input" />
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>한국 ISBN13</th>
+                                                                    <td>
+                                                                        <div class="ui-form">
+                                                                            <input type="text" class="ui-input" />
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>한국 ISBN10</th>
+                                                                    <td>
+                                                                        <div class="ui-form">
+                                                                            <input type="text" class="ui-input" />
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex-cell flex-row__cell">
                                                 <div class="table-normal table-ver">
                                                     <table>
                                                         <colgroup>
@@ -138,26 +229,44 @@
                                                         </colgroup>
                                                         <tbody>
                                                             <tr>
-                                                                <th>국내도서명 <span class="ui-require"></span></th>
+                                                                <th>해외발간도서명 <span class="ui-require"></span></th>
                                                                 <td>
                                                                     <div class="ui-form">
-                                                                        <input type="text" class="ui-input" />
+                                                                        <textarea name="" id="" cols="30" rows="10"
+                                                                            class="ui-textarea"></textarea>
                                                                     </div>
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <th>국내도서 발행년도 <span class="ui-require"></span></th>
+                                                                <th>해외발간도서 발행년도 <span class="ui-require"></span></th>
                                                                 <td>
-                                                                    <div class="ui-form">
-                                                                        <select name="" id="" class="ui-select">
-                                                                            <option value="">년도  선택</option>
-                                                                            <option value="">2022</option>
-                                                                            <option value="">2021</option>
-                                                                            <option value="">2020</option>
-                                                                            <option value="">2019</option>
-                                                                            <option value="">2018</option>
-                                                                        </select>
+
+                                                                    <div class="d-flex">
+                                                                        <div class="ui-form">
+                                                                            <select name="" id="" class="ui-select">
+                                                                                <option value="">년도 선택</option>
+                                                                                <option value="">2022</option>
+                                                                                <option value="">2021</option>
+                                                                                <option value="">2020</option>
+                                                                                <option value="">2019</option>
+                                                                                <option value="">2018</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="ui-form input-direct">
+                                                                            <input type="text" class="ui-input" />
+                                                                        </div>
                                                                     </div>
+
+                                                                    <!-- <div class="ui-form ui-select__custom-wrap">
+                                                                    <div class="ui-select__custom-title">년도  선택</div>
+                                                                    <ul class="ui-select ui-select__custom">
+                                                                        <li>2022</li>
+                                                                        <li>2021</li>
+                                                                        <li>2020</li>
+                                                                        <li>2019</li>
+                                                                        <li>2018</li>
+                                                                    </ul>
+                                                                </div> -->
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -177,7 +286,7 @@
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <th>원출판사 <span class="ui-require"></span></th>
+                                                                <th>번역서 출판사 <span class="ui-require"></span></th>
                                                                 <td>
                                                                     <div class="ui-form">
                                                                         <input type="text" class="ui-input" />
@@ -185,7 +294,7 @@
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <th>한국 ISBN13</th>
+                                                                <th>해외 ISBN13</th>
                                                                 <td>
                                                                     <div class="ui-form">
                                                                         <input type="text" class="ui-input" />
@@ -193,7 +302,7 @@
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <th>한국 ISBN10</th>
+                                                                <th>해외 ISBN10</th>
                                                                 <td>
                                                                     <div class="ui-form">
                                                                         <input type="text" class="ui-input" />
@@ -205,313 +314,261 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="flex-cell flex-row__cell">
-                                            <div class="table-normal table-ver">
-                                                <table>
-                                                    <colgroup>
-                                                        <col style="width:21rem">
-                                                    </colgroup>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th>해외발간도서명 <span class="ui-require"></span></th>
-                                                            <td>
-                                                                <div class="ui-form">
-                                                                    <textarea name="" id="" cols="30" rows="10" class="ui-textarea"></textarea>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>해외발간도서 발행년도 <span class="ui-require"></span></th>
-                                                            <td>
-
-                                                                <div class="ui-form">
-                                                                    <select name="" id="" class="ui-select">
-                                                                        <option value="">년도  선택</option>
-                                                                        <option value="">2022</option>
-                                                                        <option value="">2021</option>
-                                                                        <option value="">2020</option>
-                                                                        <option value="">2019</option>
-                                                                        <option value="">2018</option>
-                                                                    </select>
-                                                                </div>
-
-                                                                <!-- <div class="ui-form ui-select__custom-wrap">
-                                                                    <div class="ui-select__custom-title">년도  선택</div>
-                                                                    <ul class="ui-select ui-select__custom">
-                                                                        <li>2022</li>
-                                                                        <li>2021</li>
-                                                                        <li>2020</li>
-                                                                        <li>2019</li>
-                                                                        <li>2018</li>
-                                                                    </ul>
-                                                                </div> -->
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>글저자 <span class="ui-require"></span></th>
-                                                            <td>
-                                                                <div class="ui-form">
-                                                                    <input type="text" class="ui-input" />
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>그림 저자</th>
-                                                            <td>
-                                                                <div class="ui-form">
-                                                                    <input type="text" class="ui-input" />
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>번역서 출판사 <span class="ui-require"></span></th>
-                                                            <td>
-                                                                <div class="ui-form">
-                                                                    <input type="text" class="ui-input" />
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>해외 ISBN13</th>
-                                                            <td>
-                                                                <div class="ui-form">
-                                                                    <input type="text" class="ui-input" />
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>해외 ISBN10</th>
-                                                            <td>
-                                                                <div class="ui-form">
-                                                                    <input type="text" class="ui-input" />
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="table-item">
-                                    <div class="form-flex flex-row">
-                                        <div class="flex-cell flex-row__cell">
-                                            <div class="table-item">
-                                                <div class="table-normal table-ver">
-                                                    <table>
-                                                        <colgroup>
-                                                            <col style="width:21rem">
-                                                        </colgroup>
-                                                        <tbody>
-                                                            <tr>
-                                                                <th>유형</th>
-                                                                <td>
-                                                                    <div class="ui-form">
-                                                                        <select name="" id="" class="ui-select">
-                                                                            <option value="">유형 선택</option>
-                                                                            <option value="">11</option>
-                                                                        </select>
-                                                                    </div>
+                                    <div class="table-item">
+                                        <div class="form-flex flex-row">
+                                            <div class="flex-cell flex-row__cell">
+                                                <div class="table-item">
+                                                    <div class="table-normal table-ver">
+                                                        <table>
+                                                            <colgroup>
+                                                                <col style="width:21rem">
+                                                            </colgroup>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th>유형</th>
+                                                                    <td>
+                                                                        <div class="d-flex">
+                                                                            <div class="ui-form">
+                                                                                <select name="" id="" class="ui-select">
+                                                                                    <option value="">유형 선택</option>
+                                                                                    <option value="">11</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <div class="ui-form input-direct">
+                                                                                <input type="text" class="ui-input" />
+                                                                            </div>
+                                                                        </div>
 
-                                                                    <!-- <div class="ui-form ui-select__custom-wrap">
+                                                                        <!-- <div class="ui-form ui-select__custom-wrap">
                                                                         <div class="ui-select__custom-title">유형 선택</div>
                                                                         <ul class="ui-select ui-select__custom">
                                                                             <li>11</li>
                                                                         </ul>
                                                                     </div> -->
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th>분야 <span class="ui-require"></span></th>
-                                                                <td>
-                                                                    <div class="ui-form">
-                                                                        <select name="" id="" class="ui-select">
-                                                                            <option value="">분야 선택</option>
-                                                                            <option value="">11</option>
-                                                                        </select>
-                                                                    </div>
-                                                                    <!-- <div class="ui-form ui-select__custom-wrap">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>분야 <span class="ui-require"></span></th>
+                                                                    <td>
+                                                                        <div class="d-flex">
+                                                                            <div class="ui-form">
+                                                                                <select name="" id="" class="ui-select">
+                                                                                    <option value="">분야 선택</option>
+                                                                                    <option value="">11</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <div class="ui-form input-direct">
+                                                                                <input type="text" class="ui-input" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <!-- <div class="ui-form ui-select__custom-wrap">
                                                                         <div class="ui-select__custom-title">분야 선택</div>
                                                                         <ul class="ui-select ui-select__custom">
                                                                             <li>11</li>
                                                                         </ul>
                                                                     </div> -->
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th>발행형태</th>
-                                                                <td>
-                                                                    <div class="ui-form">
-                                                                        <select name="" id="" class="ui-select">
-                                                                            <option value="">발행형태 선택</option>
-                                                                            <option value="">11</option>
-                                                                        </select>
-                                                                    </div>
-                                                                    <!-- <div class="ui-form ui-select__custom-wrap">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>발행형태</th>
+                                                                    <td>
+                                                                        <div class="d-flex">
+                                                                            <div class="ui-form">
+                                                                                <select name="" id="" class="ui-select">
+                                                                                    <option value="">발행형태 선택</option>
+                                                                                    <option value="">11</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <div class="ui-form input-direct">
+                                                                                <input type="text" class="ui-input" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <!-- <div class="ui-form ui-select__custom-wrap">
                                                                         <div class="ui-select__custom-title">발행형태 선택</div>
                                                                         <ul class="ui-select ui-select__custom">
                                                                             <li>11</li>
                                                                         </ul>
                                                                     </div> -->
-                                                                    
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th>번역자</th>
-                                                                <td>
-                                                                    <div class="ui-form">
-                                                                        <input type="text" class="ui-input" />
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th>언어 <span class="ui-require"></span></th>
-                                                                <td>
-                                                                    <div class="ui-form">
-                                                                        <select name="" id="" class="ui-select">
-                                                                            <option value="">언어 선택</option>
-                                                                            <option value="">11</option>
-                                                                        </select>
-                                                                    </div>
-                                                                    <!-- <div class="ui-form ui-select__custom-wrap">
+
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>번역자</th>
+                                                                    <td>
+                                                                        <div class="ui-form">
+                                                                            <input type="text" class="ui-input" />
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>언어 <span class="ui-require"></span></th>
+                                                                    <td>
+                                                                        <div class="d-flex">
+                                                                            <div class="ui-form">
+                                                                                <select name="" id="" class="ui-select">
+                                                                                    <option value="">언어 선택</option>
+                                                                                    <option value="">11</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <div class="ui-form input-direct">
+                                                                                <input type="text" class="ui-input" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <!-- <div class="ui-form ui-select__custom-wrap">
                                                                         <div class="ui-select__custom-title">언어 선택</div>
                                                                         <ul class="ui-select ui-select__custom">
                                                                             <li>11</li>
                                                                         </ul>
                                                                     </div> -->
-                                                                   
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th>발행국가<span class="ui-require"></span></th>
-                                                                <td>
-                                                                    <div class="ui-form">
-                                                                        <select name="" id="" class="ui-select">
-                                                                            <option value="">발행국가 선택</option>
-                                                                            <option value="">11</option>
-                                                                        </select>
-                                                                    </div>
-                                                                    <!-- <div class="ui-form ui-select__custom-wrap">
+
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>발행국가<span class="ui-require"></span></th>
+                                                                    <td>
+                                                                        <div class="d-flex">
+                                                                            <div class="ui-form">
+                                                                                <select name="" id="" class="ui-select">
+                                                                                    <option value="">발행국가 선택</option>
+                                                                                    <option value="">11</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <div class="ui-form input-direct">
+                                                                                <input type="text" class="ui-input" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <!-- <div class="ui-form ui-select__custom-wrap">
                                                                         <div class="ui-select__custom-title">발행국가 선택</div>
                                                                         <ul class="ui-select ui-select__custom">
                                                                             <li>11</li>
                                                                         </ul>
                                                                     </div> -->
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th>이미지<span class="ui-require"></span></th>
-                                                                <td>
-                                                                    <div class="filebox text-left form-group d-flex ui-form">
-                                                                        <label for="ex_filename" class="ui-button--color-purple1">파일 선택</label> 
-                                                                        <input class="upload-name ui-input" value="" disabled="disabled">
-                                                                        <input type="file" id="ex_filename" class="upload-hidden"> 
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th>구매처</th>
-                                                                <td>
-                                                                    <div class="ui-form">
-                                                                        <input type="text" class="ui-input" />
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th>특이사항 <span>(절판, 수상, 이력)</span></th>
-                                                                <td>
-                                                                    <div class="ui-form">
-                                                                        <input type="text" class="ui-input" />
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>이미지<span class="ui-require"></span></th>
+                                                                    <td>
+                                                                        <div
+                                                                            class="filebox text-left form-group d-flex ui-form">
+                                                                            <label for="ex_filename"
+                                                                                class="ui-button--color-purple1">파일
+                                                                                선택</label>
+                                                                            <input class="upload-name ui-input" value=""
+                                                                                disabled="disabled">
+                                                                            <input type="file" id="ex_filename"
+                                                                                class="upload-hidden">
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>구매처</th>
+                                                                    <td>
+                                                                        <div class="ui-form">
+                                                                            <input type="text" class="ui-input" />
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>특이사항 <span>(절판, 수상, 이력)</span></th>
+                                                                    <td>
+                                                                        <div class="ui-form">
+                                                                            <input type="text" class="ui-input" />
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+
+                                    <div class="request-bottom__button">
+                                        <!-- 퍼블 전달사항 :: 클릭시 모달 표출 됩니다. -->
+                                        <a href="javascript:openModal('modal1');"
+                                            class="ui-button ui-button--width-160 ui-button--height-50 ui-button--color-deeppurple modal">등록요청</a>
+                                    </div>
+
+
+
                                 </div>
 
-                                <div class="request-bottom__button">
-                                    <!-- 퍼블 전달사항 :: 클릭시 모달 표출 됩니다. -->
-                                    <a href="javascript:openModal('modal1');" class="ui-button ui-button--width-160 ui-button--height-50 ui-button--color-deeppurple modal">등록요청</a>
-                                </div>
-
-                                
-                                
                             </div>
-
                         </div>
-                    </div>
 
-                    
-                </section>
-               </div>
+
+                    </section>
+                </div>
             </div>
         </div>
         <footer>
             <div class="footer__inner">
-              <div class="footer-banner">
-                <div class="footer-banner__list">
-                  <ul class="footer-banner__list-list">
-                    <li class="footer-banner__item">
-                      <a href="javascript:void(0)" class="footer-banner__link">
-                        <img src="../resource/image/common/footer-banner01.png" alt="">
-                      </a>
-                    </li>
-                    <li class="footer-banner__item">
-                      <a href="javascript:void(0)" class="footer-banner__link">
-                        <img src="../resource/image/common/footer-banner04.png" alt="">
-                      </a>
-                    </li>
-                    <li class="footer-banner__item">
-                      <a href="javascript:void(0)" class="footer-banner__link">
-                        <img src="../resource/image/common/footer-banner02.png" alt="">
-                      </a>
-                    </li>
-                    <!-- <li class="footer-banner__item">
+                <div class="footer-banner">
+                    <div class="footer-banner__list">
+                        <ul class="footer-banner__list-list">
+                            <li class="footer-banner__item">
+                                <a href="javascript:void(0)" class="footer-banner__link">
+                                    <img src="../resource/image/common/footer-banner01.png" alt="">
+                                </a>
+                            </li>
+                            <li class="footer-banner__item">
+                                <a href="javascript:void(0)" class="footer-banner__link">
+                                    <img src="../resource/image/common/footer-banner04.png" alt="">
+                                </a>
+                            </li>
+                            <li class="footer-banner__item">
+                                <a href="javascript:void(0)" class="footer-banner__link">
+                                    <img src="../resource/image/common/footer-banner02.png" alt="">
+                                </a>
+                            </li>
+                            <!-- <li class="footer-banner__item">
                                     <a href="javascript:void(0)" class="footer-banner__link">
                                         <img src="../resource/image/common/footer-banner03.png" alt="" style="width:11.8rem; height:7rem">
                                     </a>
                                 </li> -->
-    
-                  </ul>
-                </div>
-              </div>
-              <div class="footer-bottom">
-                <div class="footer-bottom__inner">
-                  <div class="footer-logo">
-                    <a href="./index.html" class="footer-logo__link">
-                      <img src="../resource/image/common/footer-logo.png" alt="">
-                    </a>
-                  </div>
-                  <div class="footer-info">
-                    <p class="footer-title">Publication lndustry Promotion Agency of Korea (KPIPA)</p>
-                    <div class="footer-text">
-                      <div class="footer-text__top">
-                        <p class="footer-address">63, Jungdong-ro, Deokjin-gu, Jeonju-si, Jeollabuk-do, 54866, Republic of
-                          Korea <span class="footer-email"><span class="bar"></span> Email: <a href="mailto:info@kpipa.or.kr">info@kpipa.or.kr</a></span></p>
-                        
-                      </div>
-                      <p class="copyright">ⓒ Publication Industry Promotion Agency of Korea. All Rights Reserved.</p>
+
+                        </ul>
                     </div>
-                  </div>
-                  <div class="footer-sns">
-                    <ul>
-                      <li><a href="https://www.facebook.com/kpipaorkr" target="_blank" title="new window"><img
-                            src="../resource/image/common/sns_icon01.png" alt=""></a></li>
-                      <li><a href="https://www.instagram.com/kpipaorkr/" target="_blank" title="new window"><img
-                            src="../resource/image/common/sns_icon02.png" alt=""></a></li>
-                      <li><a href="https://twitter.com/kpipaorkr" target="_blank" title="new window"><img
-                            src="../resource/image/common/sns_icon03.png" alt=""></a></li>
-                      <li><a href="https://blog.naver.com/kpipaorkr" target="_blank" title="new window"><img
-                            src="../resource/image/common/sns_icon04.png" alt=""></a></li>
-                    </ul>
-                  </div>
                 </div>
-              </div>
+                <div class="footer-bottom">
+                    <div class="footer-bottom__inner">
+                        <div class="footer-logo">
+                            <a href="./index.html" class="footer-logo__link">
+                                <img src="../resource/image/common/footer-logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footer-info">
+                            <p class="footer-title">Publication lndustry Promotion Agency of Korea (KPIPA)</p>
+                            <div class="footer-text">
+                                <div class="footer-text__top">
+                                    <p class="footer-address">63, Jungdong-ro, Deokjin-gu, Jeonju-si, Jeollabuk-do,
+                                        54866, Republic of
+                                        Korea <span class="footer-email"><span class="bar"></span> Email: <a
+                                                href="mailto:info@kpipa.or.kr">info@kpipa.or.kr</a></span></p>
+
+                                </div>
+                                <p class="copyright">ⓒ Publication Industry Promotion Agency of Korea. All Rights
+                                    Reserved.</p>
+                            </div>
+                        </div>
+                        <div class="footer-sns">
+                            <ul>
+                                <li><a href="https://www.facebook.com/kpipaorkr" target="_blank" title="new window"><img
+                                            src="../resource/image/common/sns_icon01.png" alt=""></a></li>
+                                <li><a href="https://www.instagram.com/kpipaorkr/" target="_blank"
+                                        title="new window"><img src="../resource/image/common/sns_icon02.png"
+                                            alt=""></a></li>
+                                <li><a href="https://twitter.com/kpipaorkr" target="_blank" title="new window"><img
+                                            src="../resource/image/common/sns_icon03.png" alt=""></a></li>
+                                <li><a href="https://blog.naver.com/kpipaorkr" target="_blank" title="new window"><img
+                                            src="../resource/image/common/sns_icon04.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </footer>
 
@@ -528,10 +585,12 @@
                         <div class="ui-layer__body-inner">
                             <div class="ui-buttons">
                                 <div class="ui-buttons__inner">
-                                  <button type="button" class="ui-button ui-button--color-deeppurple ui-button--width-160 ui-button--height-50">요청하기</button>
-                                  <button type="button" class="ui-button ui-button--reset ui-button--width-160 ui-button--height-50 modal-close">취소하기</button>
+                                    <button type="button"
+                                        class="ui-button ui-button--color-deeppurple ui-button--width-160 ui-button--height-50">요청하기</button>
+                                    <button type="button"
+                                        class="ui-button ui-button--reset ui-button--width-160 ui-button--height-50 modal-close">취소하기</button>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -539,13 +598,20 @@
         </div>
         <!-- //모달 -->
 
-       
+
     </div>
 
 </body>
 
 <script>
-    
+    jQuery('.ui-select').change(function () {
+        var state = jQuery('.ui-select option:selected').val();
+        if (state == 'direct') {
+            jQuery('.input-direct').show();
+        } else {
+            jQuery('.input-direct').hide();
+        }
+    });
 </script>
 
 </html>

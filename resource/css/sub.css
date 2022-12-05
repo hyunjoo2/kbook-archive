@@ -85,6 +85,22 @@
 .view-bottom__button .is-disabled{cursor: default; opacity: 0.16;}
 
 
+/* 2022.12.05 추가 수정 */
+/* input-direct */
+.input-direct{display:none; width:100%; margin-left: 5px;}
+
+/* Statistics */
+.statistics-wrap{margin-top: -7.6rem; padding-top: 7rem;}
+.statistics-wrap__inner{padding: 0 6rem;}
+.statistics-flex{display:flex;}
+.statistics-flex .statistics-item{flex:1;}
+.statistics-item .img-wrap img{display: block; max-width: 100%;}
+.statistics-table__for{margin-bottom: 18px; font-size: 14px; color:#262626; text-align: right;}
+.statistics-section .table-normal th{ height:4rem; text-align:center; font-size:15px; color:#898390; border-bottom:1px solid #ceccd3;}
+.statistics-section .table-normal td{ height:auto; font-size: 15px; text-align: center; padding: 11px 0;}
+.statistics-section_third{margin-top: 10rem;}
+
+
 /*============================= responsive =============================*/
 @media screen and (max-width:1700px){
 
@@ -120,6 +136,12 @@
 		white-space: normal;}
 	.ui-button--look-book{ width:auto; height: 40px; padding:0 10px; font-size: 15px;}
 	.ui-button--look-book span{font-size: 13px;}
+
+	.statistics-wrap{margin-top: 0; padding-left: 16px; padding-right: 16px;}
+	.statistics-wrap__inner{padding: 0;}
+	.statistics-flex, .statistics-flex .form-flex{flex-direction: column;}
+	.statistics-flex .flex-cell+.flex-cell{margin-left: 0; margin-top: 1.6rem;}
+	
 }
 
 @media screen and (max-width:720px){
@@ -169,6 +191,8 @@
 	.ui-textarea{font-size:13px; line-height:2.5rem}
 
 	.table-item table col:nth-child(1){width:15rem !important;}
+
+	
 	
     
 } 

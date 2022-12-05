@@ -76,7 +76,7 @@
 .book-list__link:hover .book-list__caption{background:#b784ff; border: solid 2px #b381f9;}
 
 .book-title{ width:100%; margin-top:1rem; text-overflow: ellipsis; white-space: nowrap; overflow:hidden; font-size:2.6rem; font-weight: 500; letter-spacing: -1px;}
-.book-title__for{ margin-top:1rem; text-overflow: ellipsis; white-space: nowrap; overflow:hidden; font-size: 2rem; font-weight: 300; color: #747478; }
+.book-title__for{ margin-top:.5rem; text-overflow: ellipsis; white-space: nowrap; overflow:hidden; font-size: 2rem; font-weight: 300; color: #747478; line-height:normal; }
 
 .book-list__info__detail{ position:relative; margin-top:2.5rem;  padding:3rem 2rem 3rem 0;}
 .book-list__info__detail::before{position: absolute; top:0; left:-19rem; width:calc(100% + 19rem); height:100%; background:#f6f7f9; content:""; z-index: -1;}
